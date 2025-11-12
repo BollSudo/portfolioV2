@@ -1,13 +1,32 @@
 
+export const aboutMe =
+    {
+        name: "Boll",
+        lastname: "Master",
+        description: ["Hi! Je suis actuellement étudiant en 3e année de BUT Informatique à l'IUT de Montpellier. J’entreprends une spécialité dans le développement d’application en suivant le parcours Réalisation d'Applications, Conception, Développement et Validation (RACDV).", "Ma passion consiste à allier mon intérêt pour les systèmes physiques avec mes compétences en informatique. J’ai découvert l’informatique en développant des scripts Python permettant de visualiser des systèmes physiques simples, comme des pendules simples ou doubles, ou encore des systèmes à N corps. Progressivement, je me suis spécialisé dans les systèmes informatiques, que j’aime déconstruire et analyser pour en comprendre en profondeur le fonctionnement. C’est pourquoi, dans chacun de mes projets, je m’assure de bien maîtriser les systèmes et composants sur lesquels je travaille, afin de produire un code propre, robuste et de qualité.", "Minutieux, j'aime aussi m'assurer que les applications que je développe soit agréable et ergonomique tout en assurant leurs fonctionnalités. Plongé dans l'informatique, je ne me lasse jamais à découvrir de nouvelles technologies ou de nouveaux langages. Mes dernières découvertes passionnantes étant React et Three.js.", "En ce qui concerne mes études, je compte terminer ma formation et poursuivre mes études en école d'ingénieur ou en Master. Le domaine me reste encore incertain. En-dehors des études, je suis un aficionado du badminton et du volley ! Je m'intéresse constamment aux dernières nouveautés technologiques, à l'espace et la culture japonaise. 💻🪐🌸🏸🏐"],
+        quote: "Dopest quote ever"
+    }
+
+export const socials = {
+    github: "https://github.com/BollSudo",
+    linkedin: "https://www.linkedin.com/in/renaudj/",
+    mail: "mailto:julien.renaud1212@gmail.com",
+}
+
+export const zodiacs = ["aquarius", "aries", "cancer", "capricorn", "gemini", "leo", "libra", "pisces", "sagittarius", "scorpio", "taurus", "virgo"]
 
 export const navLinks = [
     {
         id: "about",
-        title: "About",
+        title: "Me",
     },
     {
-        id: "work",
-        title: "Work",
+        id: "carrier",
+        title: "Parcours",
+    },
+    {
+        id: "projects",
+        title: "Projets",
     },
     {
         id: "contact",
@@ -36,111 +55,129 @@ const services = [
 
 const technologies = [
     {
-        name: "HTML 5",
-        // icon: html,
+        name: "Bootstrap",
+        icon: "bootstrap.svg",
     },
     {
         name: "CSS 3",
-        // icon: css,
+        icon: "css3.svg",
+    },
+    {
+        name: "Docker",
+        icon: "docker.png",
+    },
+    // {
+    //     name: "figma",
+    //     // icon: figma,
+    // },
+    // {
+    //     name: "git",
+    //     // icon: git,
+    // },
+    {
+        name: "HTML 5",
+        icon: "html5.svg",
+    },
+    {
+        name: "Java",
+        icon: "java.png",
+    },
+    {
+        name: "JavaFx",
+        icon: "javafx.png",
     },
     {
         name: "JavaScript",
-        // icon: javascript,
+        icon: "js.png",
     },
     {
-        name: "TypeScript",
-        // icon: typescript,
+        name: "n8n",
+        icon: "n8n.png",
+    },
+    // {
+    //     name: "Node JS",
+    //     // icon: nodejs,
+    // },
+    {
+        name: "PHP",
+        icon: 'php.svg',
+    },
+    {
+        name: "Python",
+        icon: 'python.png',
     },
     {
         name: "React JS",
-        // icon: reactjs,
+        icon: "react.png",
     },
     {
-        name: "Redux Toolkit",
-        // icon: redux,
+        name: "Sass",
+        icon: "sass.png",
+    },
+    {
+        name: "Symfony",
+        icon: "symfony.png",
     },
     {
         name: "Tailwind CSS",
-        // icon: tailwind,
-    },
-    {
-        name: "Node JS",
-        // icon: nodejs,
-    },
-    {
-        name: "MongoDB",
-        // icon: mongodb,
+        icon: "tailwind.png",
     },
     {
         name: "Three JS",
-        // icon: threejs,
-    },
-    {
-        name: "git",
-        // icon: git,
-    },
-    {
-        name: "figma",
-        // icon: figma,
-    },
-    {
-        name: "docker",
-        // icon: docker,
+        icon: "threejs.png",
     },
 ];
 
+
 const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        // icon: starbucks,
-        iconBg: "#383E56",
-        date: "March 2020 - April 2021",
+        id: 1,
+        title: "IUT Montpellier-Sète",
+        company_name: "IUT Montpellier-Sète",
+        icon: "/assets/logos/company/iutms.png",
+        iconBg: "rgb(255,255,255)",
+        date: "2023 - 2026",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Diplôme de BUT en Informatique avec spécialisation en Réalisation d'applications, conception, développement et validation (RACDV)"
         ],
+        animation: "bow",
     },
     {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        // icon: tesla,
-        iconBg: "#E6DEDD",
-        date: "Jan 2021 - Feb 2022",
+        id: 2,
+        title: "Développeur logiciel Python",
+        company_name: "CIRAD",
+        icon: "/assets/logos/company/cirad.png",
+        iconBg: "rgb(156,255,160)",
+        date: "Janvier 2025 - Avril 2025",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Conception et réalisation d'une application de bureau en Python pour soutenir le développement d'un jeu sérieux hybride 'Course contre la mouche'",
+            "Collaboration avec une équipe pluridisciplinaire et des chercheurs en agronomie",
+            "Mise en place d'une interface utilisateur graphique avec Tkinter",
+            "Implémentation d'un système de localisation et de génération de données à des fins de recherche",
         ],
+        animation: "nod",
     },
     {
-        title: "Web Developer",
-        company_name: "Shopify",
-        // icon: shopify,
-        iconBg: "#383E56",
-        date: "Jan 2022 - Jan 2023",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
+        id: 3,
+        title: "Université de Montpellier",
+        company_name: "Université de Montpellier",
+        icon: "/assets/logos/company/um.png",
+        iconBg: "rgb(255,141,144)",
+        date: "2020 - 2023",
+        points: ["Licence Physique Fondamentale"],
+        animation: "code",
     },
     {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        // icon: meta,
-        iconBg: "#E6DEDD",
-        date: "Jan 2023 - Present",
+        id: 4,
+        title: "Lycée Louis-Antoine de Bougainville",
+        company_name: "Lycée Louis-Antoine de Bougainville",
+        icon: "/assets/logos/company/lfb.png",
+        iconBg: "rgb(253,225,169)",
+        date: "",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "BAC Scientifique S-SVT spécialité Mathématiques"
         ],
+        animation: "texting",
     },
 ];
 
@@ -171,70 +208,4 @@ const testimonials = [
     },
 ];
 
-const projects = [
-    {
-        name: "Car Rent",
-        description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-        tags: [
-            {
-                name: "react",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "mongodb",
-                color: "green-text-gradient",
-            },
-            {
-                name: "tailwind",
-                color: "pink-text-gradient",
-            },
-        ],
-        // image: carrent,
-        source_code_link: "https://github.com/",
-    },
-    {
-        name: "Job IT",
-        description:
-            "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-        tags: [
-            {
-                name: "react",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "restapi",
-                color: "green-text-gradient",
-            },
-            {
-                name: "scss",
-                color: "pink-text-gradient",
-            },
-        ],
-        // image: jobit,
-        source_code_link: "https://github.com/",
-    },
-    {
-        name: "Trip Guide",
-        description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-        tags: [
-            {
-                name: "nextjs",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "supabase",
-                color: "green-text-gradient",
-            },
-            {
-                name: "css",
-                color: "pink-text-gradient",
-            },
-        ],
-        // image: tripguide,
-        source_code_link: "https://github.com/",
-    },
-];
-
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, testimonials };
