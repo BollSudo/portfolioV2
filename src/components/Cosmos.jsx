@@ -6,6 +6,7 @@ import {Bloom, EffectComposer} from "@react-three/postprocessing";
 import {Perf} from "r3f-perf";
 import CanvasLoader from "./CanvasLoader.jsx";
 import {Leva} from "leva";
+import CosmosCamera from "./CosmosCamera.jsx";
 
 
 let RotatingSphere = () => {
@@ -79,14 +80,14 @@ const Stars = () => {
                 <bufferAttribute attach="attributes-position" {...positionAttribute} />
             </bufferGeometry>
                 <pointsMaterial ref={materialRef} size={0.05} color="#ffcf49" sizeAttenuation={true} />
-            <EffectComposer>
-                <Bloom
-                    intensity={1.5}
-                    luminanceThreshold={0}
-                    luminanceSmoothing={0.9}
-                    height={300}
-                />
-            </EffectComposer>
+            {/*<EffectComposer>*/}
+            {/*    <Bloom*/}
+            {/*        intensity={1.5}*/}
+            {/*        luminanceThreshold={0}*/}
+            {/*        luminanceSmoothing={0.9}*/}
+            {/*        height={300}*/}
+            {/*    />*/}
+            {/*</EffectComposer>*/}
         </points>
     )
 }
@@ -102,10 +103,12 @@ const Cosmos = () => {
                     <ambientLight intensity={0.5} />
                     <directionalLight position={[0, 0, 5]} intensity={0.5} />
 
-                    <OrbitControls />
+                    {/*<OrbitControls />*/}
 
-                    <RotatingSphere />
-                    <Stars />
+                    <CosmosCamera>
+                        <RotatingSphere />
+                        <Stars />
+                    </CosmosCamera>
                     {/*<Perf position="bottom-left" />*/}
                 </Suspense>
             </Canvas>
