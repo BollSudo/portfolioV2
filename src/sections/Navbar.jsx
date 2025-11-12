@@ -1,35 +1,37 @@
 import React from 'react'
 import {Menu, Xmark} from "iconoir-react";
-import {navLinks} from "../constants/index.js";
+import {navLinks, zodiacs} from "../constants/index.js";
+import { HashLink as Link } from 'react-router-hash-link';
+
 
 const NavItems = () => {
     return (
         <ul className="nav-ul flex">
             {navLinks.map(({id, title}) => (
                 <li key={id} className="nav-li px-5">
-                    <a href={"#"+id} className="nav-li_a" onClick={() => {}}>
+                    <Link smooth to={"/#" + id} className="nav-li_a">
                         {title}
-                    </a>
+                    </Link>
                 </li>
             ))}
-
         </ul>
     )
 }
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = React.useState(false);
+    const zodiac = zodiacs[Math.floor(Math.random() * zodiacs.length)];
 
     const toggleMenu = () => setIsOpen((prevIsOpen) => !prevIsOpen);
 
     return (
-        <header className="fixed top-0 right-0 left-0 z-50 bg-black-100 opacity-70">
+        <header className="fixed top-0 right-0 left-0 z-100 bg-black-100">
             <div className="max-w-7xl mx-auto">
                 <div className="flex justify-between items-center py-5 mx-auto c-space">
-                    <a href="/" className="">
-                        Boll
+                    <a href="/" className="flex items-center">
+                        <img className="h-10 w-auto pr-2" src={`/assets/zodiac/${zodiac}.png`} alt="zodiac logo"></img>
+                        JR
                     </a>
-
                     <button onClick={toggleMenu} className="text-neutral-400 hover:text-white focus: outline-none sm:hidden flex" aria-label="Toggle menu">
                         {isOpen ? <Xmark /> : <Menu />}
                     </button>
@@ -45,10 +47,7 @@ const Navbar = () => {
                     <NavItems />
                 </nav>
             </div>
-
-
         </header>
-
     )
 }
 
