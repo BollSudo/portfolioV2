@@ -10,18 +10,28 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@gsap/react": "^2.1.2",
     "@react-three/drei": "^10.0.6",
     "@react-three/fiber": "^9.1.2",
     "@react-three/postprocessing": "^3.0.4",
+    "@react-three/rapier": "^2.1.0",
     "@tailwindcss/vite": "^4.1.4",
+    "gsap": "^3.13.0",
     "iconoir-react": "^7.11.0",
     "leva": "^0.10.0",
+    "maath": "^0.10.8",
+    "matter-js": "^0.20.0",
     "r3f-perf": "^7.2.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-markdown": "^10.1.0",
     "react-responsive": "^10.0.1",
+    "react-router-dom": "^7.9.5",
+    "react-router-hash-link": "^2.4.3",
     "tailwindcss": "^4.1.4",
-    "three": "^0.175.0"
+    "three": "^0.175.0",
+    "vanilla-tilt": "^1.8.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",
