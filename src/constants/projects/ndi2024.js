@@ -1,5 +1,6 @@
 export const ndi2024 = {
     id: 1,
+    priority: 6,
     name: "NDI",
     date: "2024",
     repo: "https://github.com/JumperBoost/NDI2024",

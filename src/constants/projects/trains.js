@@ -1,5 +1,6 @@
 export const trains = {
     id: 3,
+    priority: 8,
     name: "Trains",
     date: "2024",
     repo: "",

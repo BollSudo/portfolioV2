@@ -44,6 +44,29 @@ const Projects = () => {
         });
     }
 
+    const sortByDateDESC = (a, b) => {
+        return new Date(b.date) - new Date(a.date)
+    }
+
+    const sortByDateASC = (a, b) => {
+        return new Date(a.date) - new Date(b.date)
+    }
+
+    const sortByPriority = (a, b) => {
+        return a.priority - b.priority;
+    }
+
+    const handleSort = (a, b) => {
+        switch (sortType) {
+            case "newest":
+                return sortByDateDESC(a, b);
+            case "priority":
+                return sortByPriority(a, b);
+            default:
+                return sortByDateASC(a, b);
+        }
+    }
+
     const filteredProjects = projects
         .filter((p) => {
             const search = searchQuery.toLowerCase();
@@ -54,11 +77,7 @@ const Projects = () => {
                 p.date.toLowerCase().includes(search)
             );
         })
-        .sort((a, b) =>
-            sortType === "newest"
-                ? new Date(b.date) - new Date(a.date)
-                : new Date(a.date) - new Date(b.date)
-        );
+        .sort((a, b) => handleSort(a, b));
 
 
     const visibleCount = 3
@@ -86,6 +105,14 @@ const Projects = () => {
                     className="w-full h-full sm:w-1/2 px-4 py-2 rounded-lg border border-secondary shadow-sm focus-ring-custom"
                 />
                 <div className="flex gap-2 h-full">
+                    <button
+                        className={`px-3 py-1 rounded-md text-sm transition h-full btn-custom ${
+                            sortType === "priority" ? "bg-secondary/30" : ""
+                        }`}
+                        onClick={() => setSortType("priority")}
+                    >
+                        Défaut
+                    </button>
                     <button
                         className={`px-3 py-1 rounded-md text-sm transition h-full btn-custom ${
                             sortType === "newest" ? "bg-secondary/30" : ""

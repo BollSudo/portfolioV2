@@ -3,7 +3,7 @@ export const aboutMe =
     {
         name: "Boll",
         lastname: "Master",
-        description: ["Hi! Je suis actuellement étudiant en 3e année de BUT Informatique à l'IUT de Montpellier. J’entreprends une spécialité dans le développement d’application en suivant le parcours Réalisation d'Applications, Conception, Développement et Validation (RACDV).", "Ma passion consiste à allier mon intérêt pour les systèmes physiques avec mes compétences en informatique. J’ai découvert l’informatique en développant des scripts Python permettant de visualiser des systèmes physiques simples, comme des pendules simples ou doubles, ou encore des systèmes à N corps. Progressivement, je me suis spécialisé dans les systèmes informatiques, que j’aime déconstruire et analyser pour en comprendre en profondeur le fonctionnement. C’est pourquoi, dans chacun de mes projets, je m’assure de bien maîtriser les systèmes et composants sur lesquels je travaille, afin de produire un code propre, robuste et de qualité.", "Minutieux, j'aime aussi m'assurer que les applications que je développe soit agréable et ergonomique tout en assurant leurs fonctionnalités. Plongé dans l'informatique, je ne me lasse jamais à découvrir de nouvelles technologies ou de nouveaux langages. Mes dernières découvertes passionnantes étant React et Three.js.", "En ce qui concerne mes études, je compte terminer ma formation et poursuivre mes études en école d'ingénieur ou en Master. Le domaine me reste encore incertain. En-dehors des études, je suis un aficionado du badminton et du volley ! Je m'intéresse constamment aux dernières nouveautés technologiques, à l'espace et la culture japonaise. 💻🪐🌸🏸🏐"],
+        description: ["Hi! Je suis actuellement étudiant en 3e année de BUT Informatique à l'IUT de Montpellier. J’entreprends une spécialité dans le développement d’application en suivant le parcours Réalisation d'Applications, Conception, Développement et Validation (RACDV).", "Ma passion consiste à allier mon intérêt pour les systèmes physiques avec mes compétences en informatique. J’ai découvert l’informatique en développant des scripts Python permettant de visualiser des systèmes physiques simples, comme des pendules simples ou doubles, ou encore des systèmes à N corps. Progressivement, je me suis spécialisé dans les systèmes informatiques, que j’aime déconstruire et analyser pour en comprendre en profondeur le fonctionnement. C’est pourquoi, dans chacun de mes projets, je m’assure de bien maîtriser les systèmes et composants sur lesquels je travaille, afin de produire un code propre, robuste et de qualité.", "Minutieux, j'aime aussi m'assurer que les applications que je développe soit agréable et ergonomique tout en assurant leurs fonctionnalités. Plongé dans l'informatique, je ne me lasse jamais à découvrir de nouvelles technologies ou de nouveaux langages. Mes dernières découvertes passionnantes étant React et Three.js.", "En ce qui concerne mes études, je compte terminer ma formation et poursuivre mes études en école d'ingénieur ou en Master. . En-dehors des études, je suis un aficionado du badminton et du volley ! Je m'intéresse constamment aux dernières nouveautés technologiques, à l'espace et la culture japonaise. 💻🪐🌸🏸🏐"],
         quote: "Dopest quote ever"
     }
 
@@ -94,10 +94,10 @@ const technologies = [
         name: "n8n",
         icon: "n8n.png",
     },
-    // {
-    //     name: "Node JS",
-    //     // icon: nodejs,
-    // },
+    {
+        name: "Node JS",
+        icon: "nodejs.svg",
+    },
     {
         name: "PHP",
         icon: 'php.svg',

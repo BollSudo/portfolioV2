@@ -1,5 +1,6 @@
 export const gps = {
     id: 6,
+    priority: 2,
     name: "GoPetSit™",
     date: "2025",
     repo: "",

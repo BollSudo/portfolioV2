@@ -4,9 +4,10 @@ import {trains} from "./projects/trains.js";
 import {cirad} from "./projects/cirad.js";
 import {veryBadSplit} from "./projects/veryBadSplit.js";
 import {gps} from "./projects/gps.js";
+import {myAvatar} from "./projects/myAvatar.js";
 
 const projects = [
-    ndi2024, studAdvisor, trains, cirad, veryBadSplit, gps
+    ndi2024, studAdvisor, trains, cirad, veryBadSplit, gps, myAvatar
 ];
 
 export { projects };

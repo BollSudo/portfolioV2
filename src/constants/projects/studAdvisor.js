@@ -1,5 +1,6 @@
 export const studAdvisor = {
     id: 2,
+    priority: 7,
     name: "StudAdvisor",
     date: "2024",
     repo: "https://github.com/BollSudo/A2-SAE-PHP",

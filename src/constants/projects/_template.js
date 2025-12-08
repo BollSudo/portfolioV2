@@ -1,5 +1,6 @@
 export const _template = {
     id: 1,
+    priority: 1,
     name: "",
     date: "",
     repo: "",
