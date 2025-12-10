@@ -1,4 +1,4 @@
-docker
+docker/app
 node_modules
 .gitignore
 .dockerignore

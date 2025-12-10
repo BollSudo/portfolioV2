@@ -1,20 +1,8 @@
-FROM node:24-slim
+FROM nginx:alpine
 
-WORKDIR /app
+RUN apk update && apk add --no-cache curl
+RUN rm -rf /usr/share/nginx/html/*
+COPY ./dist/ /usr/share/nginx/html/
+COPY ./docker/config/nginx.conf /etc/nginx/conf.d/default.conf
 
-# Install app dependencies
-COPY package*.json .
-RUN npm install
-
-# Copy sources
-COPY . .
-
-# Build app
-RUN npm run build
-
-# Serve app
-RUN npm install -g serve
-
-EXPOSE 3000
-
-CMD ["serve", "-s", "dist", "-l", "3000"]
+CMD ["nginx", "-g", "daemon off;"]

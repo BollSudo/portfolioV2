@@ -1,0 +1,72 @@
+name: Deploy
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  test:
+    uses: ./.github/workflows/test.yml
+
+  deploy:
+    environment: production
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Set up SSH
+        uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PK }}
+
+      - name: Add known hosts
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.KNOWN_HOSTS }}" >> ~/.ssh/known_hosts
+
+      - name: Set up environment
+        run: |
+          echo "DOMAIN_NAME=${{ vars.DEPLOY_DOMAIN }}" >> .env
+          echo "APP_NAME=${{ vars.APP_NAME }}" >> .env
+
+      - name: Deploy app
+        run: |
+          ssh -p ${{ secrets.DEPLOY_PORT }} ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }} << 'EOF'
+            set -euo pipefail
+
+            mkdir -p /home/${{ secrets.DEPLOY_USER }}/${{ vars.DEPLOY_DIR }}
+            cd /home/${{ secrets.DEPLOY_USER }}/${{ vars.DEPLOY_DIR }}
+
+            docker compose down || true
+
+            exit_code=0
+          EOF
+
+          rsync -avz --delete \
+            --include="dist/***" \
+            --include="docker-compose.yml" \
+            --include=".env" \
+            --include="docker/***" \
+            --exclude="*" \
+            -e "ssh -p ${{ secrets.DEPLOY_PORT }}" \
+            ./ ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:/home/${{ secrets.DEPLOY_USER }}/${{ vars.DEPLOY_DIR }}
+
+          ssh -p ${{ secrets.DEPLOY_PORT }} ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }} << 'EOF'
+            set -euo pipefail
+            cd /home/${{ secrets.DEPLOY_USER }}/${{ vars.DEPLOY_DIR }}
+            docker compose up -d --build
+          EOF
