@@ -18,8 +18,10 @@ const TechStackPhysics = ({ isPlaying = false, hasGravity = false }) => {
         const height = sceneRef.current.clientHeight;
 
         // Zero gravity
-        engine.world.gravity.x = 0;
-        engine.world.gravity.y = 0;
+        if (!hasGravity) {
+            engine.world.gravity.x = 0;
+            engine.world.gravity.y = 0;
+        }
 
         const render = Matter.Render.create({
             element: sceneRef.current,
@@ -112,7 +114,7 @@ const TechStackPhysics = ({ isPlaying = false, hasGravity = false }) => {
             render.canvas.remove();
             render.textures = {};
         };
-    }, [logos, isPlaying]);
+    }, [logos, isPlaying, hasGravity]);
 
 
     return (

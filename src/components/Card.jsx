@@ -1,6 +1,6 @@
 import React, {useRef} from 'react'
 
-const Card = ({ card, children, index }) => {
+const Card = ({ children, index }) => {
     const cardRefs = useRef([]);
 
     const handleMouseMove = (index) => (e) => {

@@ -1,6 +1,7 @@
 import React, { createContext } from 'react'
 import { useMediaQuery } from "react-responsive";
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const AppContext = createContext({});
 
 export const AppProvider = ({children}) => {

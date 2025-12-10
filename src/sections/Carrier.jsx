@@ -72,7 +72,7 @@ const Carrier = () => {
                                             <div style={{ backgroundColor: card.iconBg }} className={`timeline-logo p-1 relative ${index % 2 === 0 ? "md:left-[-40px] left-[-20px]" : "md:right-[-40px] right-[-20px]" }`}>
                                                 <img src={card.icon} alt={card.company_name} className="w-full h-auto" />
                                             </div>
-                                            <Card card={card} index={index}>
+                                            <Card index={index}>
                                                 <div className="w-full">
                                                     <h1>{card.title}</h1>
                                                     <p>{card.date}</p>

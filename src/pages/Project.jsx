@@ -18,7 +18,7 @@ const Project = () => {
     }
 
 
-    const openModal = (image) => (e) => {
+    const openModal = (image) => () => {
         if (!modalRef.current) return;
         currentImage = image;
         updateImage(image);
@@ -33,13 +33,13 @@ const Project = () => {
         modalImg.src = getImageSrc(image);
     }
 
-    const closeModal = (e) => {
+    const closeModal = () => {
         if (!modalRef.current) return;
         modalRef.current.style.display = "none";
         currentImage = null;
     }
 
-    const nextImage = (e) => {
+    const nextImage = () => {
         if (!modalRef.current) return;
         let currentIndex = findImageIndex(currentImage);
         if (currentIndex === -1) return;
@@ -48,7 +48,7 @@ const Project = () => {
         updateImage(currentImage);
     }
 
-    const prevImage = (e) => {
+    const prevImage = () => {
         if (!modalRef.current) return;
         let currentIndex = findImageIndex(currentImage);
         if (currentIndex === -1) return;
