@@ -126,6 +126,10 @@ const technologies = [
         name: "Three JS",
         icon: "threejs.png",
     },
+    {
+        name: "Vue JS",
+        icon: "vue.png",
+    },
 ];
 
 
