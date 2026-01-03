@@ -2,7 +2,7 @@ export const veryBadSplit = {
     id: 5,
     priority: 5,
     name: "Very Bad Split",
-    date: "2025",
+    date: new Date(2025, 5, 0),
     repo: "https://github.com/BollSudo/A2-SAE-VeryBadSplit",
     summary:
         "TBD...",

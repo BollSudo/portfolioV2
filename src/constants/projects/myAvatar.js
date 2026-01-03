@@ -2,7 +2,7 @@ export const myAvatar = {
     id: 7,
     priority: 1,
     name: "MyAvatar",
-    date: "2025",
+    date: new Date(2025, 10, 0),
     repo: "",
     summary:
         "Un clone du service Gravatar.Ce service permet aux utilisateurs de gérer un avatar associé à leur adresse email, qui peut être utilisé sur divers sites web.",

@@ -2,7 +2,7 @@ export const cirad = {
     id: 4,
     priority: 3,
     name: "Race against the Fly",
-    date: "2025",
+    date: new Date(2025, 1, 0),
     repo: "",
     summary:
         "TBD...",

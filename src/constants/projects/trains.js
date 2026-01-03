@@ -2,7 +2,7 @@ export const trains = {
     id: 3,
     priority: 8,
     name: "Trains",
-    date: "2024",
+    date: new Date(2024, 2, 0),
     repo: "",
     summary:
         "",

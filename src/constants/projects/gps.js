@@ -2,7 +2,7 @@ export const gps = {
     id: 6,
     priority: 2,
     name: "GoPetSit™",
-    date: "2025",
+    date: new Date(2025, 4, 0),
     repo: "",
     summary:
         "Dans le contexte d'un projet étudiant de développement d'application, en équipe de quatre développeurs, nous avons travaillé sur une application de réservation de services en ligne pour gestion des x de compax de compax de compax de compax de compax de compax de compax de compax de compax de compax de compax de compax de comx de compax de compax de compax de compax de compax de compax de compax de compax de compax de compax de compax de compax de compax de compax de compax de compax de compax de compax de compax de compax de compax de compax de compax de compax de compax de compax de compax de compax de compax de compax de compax de compax de compax de compax de compax de compax de compax de compax de compax de compax de compapax de compax de compa de compagnie...",

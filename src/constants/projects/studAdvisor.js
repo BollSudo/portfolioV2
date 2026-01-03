@@ -2,7 +2,7 @@ export const studAdvisor = {
     id: 2,
     priority: 7,
     name: "StudAdvisor",
-    date: "2024",
+    date: new Date(2024, 10, 0),
     repo: "https://github.com/BollSudo/A2-SAE-PHP",
     summary:
         "",

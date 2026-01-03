@@ -2,12 +2,16 @@ import React, {useRef, useState} from 'react'
 import TitleSection from "../components/TitleSection.jsx";
 import {projects} from "../constants/projects.js";
 import ProjectCardContent from "../components/ProjectCardContent.jsx";
+import { useContext } from "react";
+import { AppContext } from "../context/AppContext";
 
 const Projects = () => {
     const cardRefs = useRef([]);
-    const [sortType, setSortType] = useState("newest");
+    const [sortType, setSortType] = useState("priority");
     const [searchQuery, setSearchQuery] = useState("");
     const [currentIndex, setCurrentIndex] = useState(0);
+    const {isTablet} = useContext(AppContext);
+    const {isMobile} = useContext(AppContext);
 
     const handleMouseMove = (e) => {
         if (!cardRefs.current) return;
@@ -74,13 +78,13 @@ const Projects = () => {
                 p.name.toLowerCase().includes(search) ||
                 p.technologies.some((tech) => tech.toLowerCase().includes(search)) ||
                 p.tags.some((tag) => tag.toLowerCase().includes(search)) ||
-                p.date.toLowerCase().includes(search)
+                p.date.getFullYear().toString().includes(search)
             );
         })
         .sort((a, b) => handleSort(a, b));
 
 
-    const visibleCount = 3
+    const visibleCount = isMobile ? 1 : isTablet ? 2 : 3;
     const maxIndex = Math.max(0, filteredProjects.length / visibleCount - 1);
 
     const handleNext = () => {
@@ -111,7 +115,7 @@ const Projects = () => {
                         }`}
                         onClick={() => setSortType("priority")}
                     >
-                        Défaut
+                        Showcase
                     </button>
                     <button
                         className={`px-3 py-1 rounded-md text-sm transition h-full btn-custom ${
@@ -154,9 +158,10 @@ const Projects = () => {
                     className="section-container h-[80vh] w-[95%] mx-auto mt-5 sm:mt-2.5 flex overflow-hidden">
                     {filteredProjects.map((project) => (
                         <div key={project.id} ref={(el) => (cardRefs.current[project.id] = el)}
-                             className="card-project card-glow w-[33%] h-full mx-[0.15%] flex-shrink-0 min-w-[300px] rounded-2xl transition-transform duration-500 ease-in-out"
+                             className="card-project card-glow h-full mx-[0.15%] flex-shrink-0 min-w-[300px] rounded-2xl transition-transform duration-500 ease-in-out"
                              style={{
-                                 transform: `translateX(calc(-${visibleCount * currentIndex * 100}% - ${visibleCount * currentIndex * 6 * 0.15}%))`,
+                                 width: `${(100 / visibleCount) - 2 * 0.15}%`,
+                                 transform: `translateX(calc(-${visibleCount * currentIndex * 100}% - ${visibleCount * currentIndex * 2 * visibleCount * 0.15}%))`,
                              }}>
                             <div className="card-inner w-full h-full flex flex-col items-center p-3">
                                 <ProjectCardContent project={project} />

@@ -2,7 +2,7 @@ export const ndi2025 = {
     id: 8,
     priority: 2,
     name: "NDI",
-    date: "2025",
+    date: new Date(2025, 12, 0),
     repo: "https://github.com/BollSudo/NDI2025",
     summary:
         "A définir...",

@@ -2,7 +2,7 @@ export const ndi2024 = {
     id: 1,
     priority: 6,
     name: "NDI",
-    date: "2024",
+    date: new Date(2024, 12, 0),
     repo: "https://github.com/JumperBoost/NDI2024",
     summary:
         "A définir...",
