@@ -38,11 +38,6 @@ jobs:
           mkdir -p ~/.ssh
           echo "${{ secrets.KNOWN_HOSTS }}" >> ~/.ssh/known_hosts
 
-      - name: Set up environment
-        run: |
-          echo "DOMAIN_NAME=${{ vars.DEPLOY_DOMAIN }}" >> .env
-          echo "APP_NAME=${{ vars.APP_NAME }}" >> .env
-
       - name: Deploy app
         run: |
           ssh -p ${{ secrets.DEPLOY_PORT }} ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }} << 'EOF'
@@ -59,8 +54,8 @@ jobs:
           rsync -avz --delete \
             --include="dist/***" \
             --include="docker-compose.yml" \
-            --include=".env" \
             --include="docker/***" \
+            --exclude=".env" \
             --exclude="*" \
             -e "ssh -p ${{ secrets.DEPLOY_PORT }}" \
             ./ ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:/home/${{ secrets.DEPLOY_USER }}/${{ vars.DEPLOY_DIR }}
