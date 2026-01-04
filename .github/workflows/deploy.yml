@@ -25,6 +25,12 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Set up environment
+        run: |
+          echo "VITE_APP_EMAILJS_SERVICE_ID=${{ vars.VITE_APP_EMAILJS_SERVICE_ID }}" >> .env
+          echo "VITE_APP_EMAILJS_TEMPLATE_ID=${{ vars.VITE_APP_EMAILJS_TEMPLATE_ID }}" >> .env
+          echo "VITE_APP_EMAILJS_PUBLIC_KEY=${{ secrets.VITE_APP_EMAILJS_PUBLIC_KEY }}" >> .env
+
       - name: Build
         run: npm run build
 
