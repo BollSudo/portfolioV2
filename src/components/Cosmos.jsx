@@ -3,7 +3,6 @@ import {Canvas, useFrame} from "@react-three/fiber";
 import {OrbitControls, PerspectiveCamera} from "@react-three/drei";
 import * as THREE from "three";
 import {Bloom, EffectComposer} from "@react-three/postprocessing";
-import {Perf} from "r3f-perf";
 import CanvasLoader from "./CanvasLoader.jsx";
 import {Leva} from "leva";
 import CosmosCamera from "./CosmosCamera.jsx";
