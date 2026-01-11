@@ -1,4 +1,9 @@
 
+export const wakatimeDataURL =
+    {
+        languages: "https://raw.githubusercontent.com/bollsudo/bollsudo/main/data/wakatime/langs.json"
+    }
+
 export const aboutMe =
     {
         name: "Boll",
@@ -11,6 +16,7 @@ export const socials = {
     github: "https://github.com/BollSudo",
     linkedin: "https://www.linkedin.com/in/renaudj/",
     mail: "mailto:julien.renaud1212@gmail.com",
+    wakatime: "https://wakatime.com/@Boll"
 }
 
 export const zodiacs = ["aquarius", "aries", "cancer", "capricorn", "gemini", "leo", "libra", "pisces", "sagittarius", "scorpio", "taurus", "virgo"]
@@ -54,84 +60,28 @@ const services = [
 ];
 
 const technologies = [
-    {
-        name: "Bootstrap",
-        icon: "bootstrap.svg",
-    },
-    {
-        name: "CSS 3",
-        icon: "css3.svg",
-    },
-    {
-        name: "Docker",
-        icon: "docker.png",
-    },
-    // {
-    //     name: "figma",
-    //     // icon: figma,
-    // },
-    // {
-    //     name: "git",
-    //     // icon: git,
-    // },
-    {
-        name: "HTML 5",
-        icon: "html5.svg",
-    },
-    {
-        name: "Java",
-        icon: "java.png",
-    },
-    {
-        name: "JavaFx",
-        icon: "javafx.png",
-    },
-    {
-        name: "JavaScript",
-        icon: "js.png",
-    },
-    {
-        name: "n8n",
-        icon: "n8n.png",
-    },
-    {
-        name: "Node JS",
-        icon: "nodejs.svg",
-    },
-    {
-        name: "PHP",
-        icon: 'php.svg',
-    },
-    {
-        name: "Python",
-        icon: 'python.png',
-    },
-    {
-        name: "React JS",
-        icon: "react.png",
-    },
-    {
-        name: "Sass",
-        icon: "sass.png",
-    },
-    {
-        name: "Symfony",
-        icon: "symfony.png",
-    },
-    {
-        name: "Tailwind CSS",
-        icon: "tailwind.png",
-    },
-    {
-        name: "Three JS",
-        icon: "threejs.png",
-    },
-    {
-        name: "Vue JS",
-        icon: "vue.png",
-    },
-];
-
+    { name : "Bootstrap", icon: "bootstrap.svg", wakaName: "Bootstrap" },
+    { name : "CSS 3", icon: "css3.svg", wakaName: "CSS" },
+    { name : "Docker", icon: "docker.png", wakaName: "Docker" },
+    { name : "HTML 5", icon: "html5.svg", wakaName: "HTML" },
+    { name : "Java", icon: "java.png", wakaName: "Java" },
+    { name : "JavaFx", icon: "javafx.png", wakaName: "---" },
+    { name : "JavaScript", icon: "js.png", wakaName: "JavaScript" },
+    { name : "n8n", icon: "n8n.png", wakaName: "---" },
+    { name : "Node JS", icon: "nodejs.svg", wakaName: "---" },
+    { name : "PHP", icon: "php.svg", wakaName: "PHP" },
+    { name : "Python", icon: "python.png", wakaName: "Python" },
+    { name : "React JS", icon: "react.png", wakaName: "JavaScript" },
+    { name : "Sass", icon: "sass.png", wakaName: "Sass" },
+    { name : "Symfony", icon: "symfony.png", wakaName: "PHP" },
+    { name : "Tailwind CSS", icon: "tailwind.png", wakaName: "CSS" },
+    { name : "Three JS", icon: "threejs.png", wakaName: "JavaScript" },
+    { name : "Vue JS", icon: "vue.png", wakaName: "JavaScript" },
+    { name : "C#", icon: "csharp.svg", wakaName: "C#"},
+    { name : "Godot", icon: "godot.svg", wakaName: "Godot Resource"},
+    { name : "Postgres", icon: "postgresql.svg", wakaName: "SQL"},
+    { name : "Scala", icon: "scala.svg", wakaName: "Scala"},
+]
 
 const experiences = [
     {
