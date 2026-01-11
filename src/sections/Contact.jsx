@@ -42,7 +42,7 @@ const Contact = () => {
     return (
         <section id="contact" className="w-full h-full md:mt-40 mt-20">
             <div className="sm:py-10 py-5 sm:px-5 px-2.5">
-                <TitleSection title="Contact" subTitle="Get in touch" />
+                <TitleSection title="Contact" subTitle="Prendre contact" />
                 <div className="contact-container flex flex-col lg:flex-row py-5 gap-5">
                     <div className="bg-primary w-full lg:w-1/2 rounded-2xl">
                         <form ref={formRef} onSubmit={handleSubmit} id="contact-form" action="" method="post">
