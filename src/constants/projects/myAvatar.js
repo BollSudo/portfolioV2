@@ -5,10 +5,10 @@ export const myAvatar = {
     date: new Date(2025, 10, 0),
     repo: "",
     summary:
-        "Un clone du service Gravatar.Ce service permet aux utilisateurs de gérer un avatar associé à leur adresse email, qui peut être utilisé sur divers sites web.",
+        "Un clone du service Gravatar, permettant aux utilisateurs de gérer un avatar associé à leur adresse email, et qui peut être utilisé sur divers sites web",
     thumbnail: {
         type: "image",
-        source: ""
+        source: "gallery/myAvatarHome.png"
     },
     context:
         "**MyAvatar** est une application web (server-side rendered) développée en environ deux mois avec le framework **Symfony** dans le cadre d'un projet de 3e année de BUT Informatique. L’objectif principal est de permettre aux utilisateurs de **gérer leur identité numérique** à travers un système avancé de **gestion d’avatars**. L’application propose un système d’**inscription et d’authentification sécurisée**. Une fois connecté, l’utilisateur accède à un espace personnel lui permettant de modifier ses informations, de gérer plusieurs avatars et de contrôler la **visibilité de son profil**. Un **panneau d’administration** est également intégré afin de permettre la gestion des utilisateurs, le paramétrage du site et la mise en maintenance de l’application. Le projet repose sur une architecture moderne intégrant une **API**, une base de données **PostgreSQL**, une infrastructure **Docker** pour le développement et un **pipeline CI/CD GitLab** assurant tests et déploiements automatisés.\n",

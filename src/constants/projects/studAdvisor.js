@@ -5,10 +5,10 @@ export const studAdvisor = {
     date: new Date(2024, 10, 0),
     repo: "https://github.com/BollSudo/A2-SAE-PHP",
     summary:
-        "",
+        "Création d'une plateforme web dynamique et sécurisée conçue pour favoriser l'aide à la poursuite d'études des étudiants de BUT 3",
     thumbnail: {
         type: "image",
-        source: ""
+        source: "gallery/etudinfos.png"
     },
     context:
         "Dans le cadre du projet tuteuré du semestre trois de BUT Informatique, il nous a été demandé de développer un **site web dynamique, portable et sécurisé en PHP**. Ce site web devait répondre au besoin client du responsable d'études et avait pour objectif primaire de favoriser l'aide à la poursuite d'études des étudiants de BUT3. Le projet s'étend sur une durée d'environ quatre mois et s'est fait en équipe de cinq étudiants.",

@@ -5,10 +5,10 @@ export const ndi2024 = {
     date: new Date(2024, 12, 0),
     repo: "https://github.com/JumperBoost/NDI2024",
     summary:
-        "A définir...",
+        "Nuit de l'Info édition 2024",
     thumbnail: {
         type: "image",
-        source: ""
+        source: "gallery/ndi2024site.png"
     },
     context:
         "La [**_Nuit de l'Info_**](https://www.nuitdelinfo.com/) est une compétition nationale pendant laquelle des équipes de développeurs passent une nuit, du crépuscule à l'aube, pour développer un site web. Le site web doit respecter un défi et un thème révélé le soir même. Le [**défi principal**](/pdf/ndi2024.pdf) de l'édition 2024 de cet événement était le lien entre l'océan et le corps humain présenté par la fondation [**_Race for Water_**](https://www.raceforwater.org/fr/).",

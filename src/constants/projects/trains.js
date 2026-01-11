@@ -5,10 +5,10 @@ export const trains = {
     date: new Date(2024, 2, 0),
     repo: "",
     summary:
-        "",
+        "Numérisation du jeu de plateau Trains © sous la forme d'une application standalone en Java",
     thumbnail: {
         type: "image",
-        source: ""
+        source: "gallery/trainsIHM.png"
     },
     context:
         "Dans le cadre d'un projet de trois mois de 1ère année de **BUT Informatique**, en binôme, nous avons développé une application de bureau en **Java** qui se présente sous la forme d'un exécutable. Cette application consiste en une version numérique d'un jeu de plateau nommé *Trains ©*. L'objectif de ce projet était d'**informatiser la mécanique** du jeu afin d'**implémenter une Interface Homme Machine (IHM) ergonomique** en passant par l'**exploration des algorithmes de graphes**. La structure du projet suit la convention **Maven**.",

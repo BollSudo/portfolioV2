@@ -5,10 +5,10 @@ export const ndi2025 = {
     date: new Date(2025, 12, 0),
     repo: "https://github.com/BollSudo/NDI2025",
     summary:
-        "A définir...",
+        "Nuit de l'Info édition 2025",
     thumbnail: {
         type: "image",
-        source: ""
+        source: "gallery/ndi2025Intro.png"
     },
     context:
         "La [**_Nuit de l'Info_**](https://www.nuitdelinfo.com/) est une compétition nationale pendant laquelle des équipes de développeurs passent une nuit, du crépuscule à l'aube, pour développer un site web. Le site web doit respecter un défi et un thème révélé le soir même. Le [**défi principal**](/pdf/ndi2025.pdf) de l'édition 2025 de cet événement était de concevoir une application web ludique et engageante permettant de sensibiliser le grand public à la démarche **NIRD** (Numérique Inclusif, Responsable et Durable), en montrant comment les établissements scolaires peuvent réduire leur dépendance aux grandes plateformes numériques et reprendre le contrôle de leurs outils, de manière progressive, réaliste et collaborative.",
