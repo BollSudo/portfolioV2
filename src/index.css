@@ -612,3 +612,38 @@
   50% { border-color: transparent; }
 }
 
+.stars-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: 0;
+}
+
+.stars-overlay::after {
+  content: " ";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  box-shadow:
+          40px 10px #fff,
+          120px -10px rgba(255,255,255,0.8),
+          70px 80px rgba(255,255,255,0.6),
+          180px 40px #fff,
+          220px 120px rgba(255,255,255,0.9),
+          30px 140px rgba(255,255,255,0.5),
+          260px 80px #fff,
+          140px 150px rgba(255,255,255,0.7);
+  animation: twinkle 10s infinite ease-in-out alternate;
+}
+
+@keyframes twinkle {
+  0% { opacity: 0.3; transform: scale(0.8); }
+  100% { opacity: 1; transform: scale(1.1); }
+}
