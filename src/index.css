@@ -38,11 +38,11 @@
   }
 
   .timeline {
-    @apply absolute z-30 h-[110%] -top-10 w-14 md:w-28 bg-black;
+    @apply absolute z-30 h-[110%] -top-10 w-28 bg-black;
   }
 
   .timeline-logo {
-    @apply md:size-20 size-10 flex-none rounded-full flex justify-center items-center md:-translate-y-7 border-2 border-secondary bg-black-100;
+    @apply size-20 flex-none rounded-full flex justify-center items-center md:-translate-y-7 border-2 border-secondary bg-black-100;
   }
 
   .exp-card-wrapper {
@@ -296,6 +296,24 @@
   transform-origin: 70% 70%;
   display: inline-block;
 }
+
+@keyframes glow {
+  0%, 100% {
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.25),
+    0 0 8px rgba(255, 220, 150, 0.25);
+    opacity: 0.75;
+  }
+  50% {
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.4),
+    0 0 12px rgba(255, 220, 150, 0.35);
+    opacity: 1;
+  }
+}
+
+.animate-glow {
+  animation: glow 5s ease-in-out infinite;
+}
+
 
 @keyframes wave-animation {
   0% {

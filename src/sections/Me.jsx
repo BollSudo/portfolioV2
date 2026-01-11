@@ -26,7 +26,7 @@ const Me = () => {
                     {/*</div>*/}
                     <div className="me-content flex-1 flex-col justify-center items-center">
                         <div className="flex-1">
-                            <p className="text-white-800 text-justify py-2 text-hack">&gt; whoami</p>
+                            <p className="text-secondary font-bold text-xl text-justify py-2 text-hack">&gt; whoami</p>
                             {aboutMe.description.map((paragraph, index) => (
                                 <p key={index} className="text-white-800 text-justify pb-2">{paragraph}</p>
                             ))}

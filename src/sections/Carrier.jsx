@@ -1,14 +1,17 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import {experiences} from "../constants/index.js";
 import TitleSection from "../components/TitleSection.jsx";
 import Card from "../components/Card.jsx";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
+import {AppContext} from "@/context/AppContext.jsx";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Carrier = () => {
+    const {isTablet} = useContext(AppContext);
+    const {isMobile} = useContext(AppContext);
     useGSAP(() => {
         gsap.utils.toArray('.carrier-left-card').forEach((card) => {
             gsap.from(card, {
@@ -62,20 +65,20 @@ const Carrier = () => {
                     <div className="relative z-50 xl:space-y-32 space-y-10">
                         {experiences.map((card, index) => (
                             <div key={card.id} className={`exp-card-wrapper flex flex-col xl:flex-row items-center ${index % 2 === 0 ? "xl:flex-row-reverse" : ""}`}>
-                                <div className="xl:w-1/2 flex items-start justify-center">
+                                <div className="xl:w-1/2 w-full flex items-start justify-center">
                                     <div className={`flex items-start w-full ${index % 2 === 0 ? "" : "justify-end"}`}>
-                                        <div className="timeline-wrapper">
+                                        <div className={`timeline-wrapper ${isTablet || isMobile ? "left-[20px]" : ""}`}>
                                             <div className="timeline" />
                                             <div className="gradient-line w-1 h-full" />
                                         </div>
-                                        <div className={`expText flex xl:gap-20 md:gap-10 gap-5 w-full relative z-20 ${index % 2 === 0 ? "" : "xl:flex-row-reverse"}`}>
-                                            <div style={{ backgroundColor: card.iconBg }} className={`timeline-logo p-1 relative ${index % 2 === 0 ? "md:left-[-40px] left-[-20px]" : "md:right-[-40px] right-[-20px]" }`}>
+                                        <div className={`expText group flex xl:gap-20 md:gap-10 gap-5 w-full relative z-20 ${index % 2 === 0 ? "" : "xl:flex-row-reverse"}`}>
+                                            <div style={{ backgroundColor: card.iconBg }} className={`timeline-logo p-1 relative ${(!isTablet && !isMobile) ? index % 2 === 0 ? "xl:left-[-40px] left-[-20px]" : "xl:right-[-40px] right-[-20px]" : "xl:left-[-40px] left-[-20px]"}`}>
                                                 <img src={card.icon} alt={card.company_name} className="w-full h-auto" />
                                             </div>
                                             <Card index={index}>
-                                                <div className="w-full">
-                                                    <h1>{card.title}</h1>
-                                                    <p>{card.date}</p>
+                                                <div className="group w-full opacity-80 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+                                                    <h1 className="text-secondary font-bold text-lg">{card.title}</h1>
+                                                    <p className="text-sm italic">{card.date}</p>
                                                     <ul className="list-disc ms-5 mt-5 flex flex-col gap-5">
                                                         {card.points.map((point) => (
                                                             <li key={point} className="text-lg">

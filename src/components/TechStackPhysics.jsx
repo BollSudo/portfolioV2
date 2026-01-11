@@ -13,6 +13,7 @@ const TechStackPhysics = ({ isPlaying = false, hasGravity = false }) => {
     const mouseConstraintRef = useRef(null);
     const logoBodiesRef = useRef([]);
     const [wakaLanguages, setWakaLanguages] = useState([]);
+    const [isGrabbing, setIsGrabbing] = useState(false);
 
     useEffect(() => {
         fetch(wakatimeDataURL.languages)
@@ -195,7 +196,10 @@ const TechStackPhysics = ({ isPlaying = false, hasGravity = false }) => {
     return (
         <div
             ref={sceneRef}
-            className="w-full h-full bg-black/70 rounded-2xl overflow-hidden relative"
+            className={`w-full h-full bg-black/70 rounded-2xl overflow-hidden relative ${isGrabbing ? "cursor-grabbing" : "cursor-grab"}`}
+            onMouseDown={() => setIsGrabbing(true)}
+            onMouseUp={() => setIsGrabbing(false)}
+            onMouseLeave={() => setIsGrabbing(false)}
         />
     );
 };

@@ -13,7 +13,7 @@ const ProjectCardContent = ({project}) => {
                 ) : <div className="h-[50px]"></div>}
             </div>
             <div className="project-summary flex-1 max-h-1/4 overflow-hidden">
-                <p className="text-justify line-clamp-6">
+                <p className="text-center line-clamp-6 pt-5">
                     {project.summary}
                 </p>
             </div>

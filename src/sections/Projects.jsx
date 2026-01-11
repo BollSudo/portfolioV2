@@ -95,6 +95,11 @@ const Projects = () => {
         setCurrentIndex((prev) => Math.max(prev - 1, 0));
     };
 
+    const handleChangeSortType = (sortType) => {
+        setSortType(sortType);
+        setCurrentIndex(0);
+    }
+
 
     return (
         <section id="projects" className="w-full h-full md:mt-40 mt-20">
@@ -113,7 +118,7 @@ const Projects = () => {
                         className={`px-3 py-1 rounded-md text-sm transition h-full btn-custom ${
                             sortType === "priority" ? "bg-secondary/30" : ""
                         }`}
-                        onClick={() => setSortType("priority")}
+                        onClick={() => handleChangeSortType("priority")}
                     >
                         Showcase
                     </button>
@@ -121,7 +126,7 @@ const Projects = () => {
                         className={`px-3 py-1 rounded-md text-sm transition h-full btn-custom ${
                             sortType === "newest" ? "bg-secondary/30" : ""
                         }`}
-                        onClick={() => setSortType("newest")}
+                        onClick={() => handleChangeSortType("newest")}
                     >
                         Newest
                     </button>
@@ -129,7 +134,7 @@ const Projects = () => {
                         className={`px-3 py-1 rounded-md text-sm transition btn-custom ${
                             sortType === "oldest" ? "bg-secondary/30" : ""
                         }`}
-                        onClick={() => setSortType("oldest")}
+                        onClick={() => handleChangeSortType("oldest")}
                     >
                         Oldest
                     </button>
