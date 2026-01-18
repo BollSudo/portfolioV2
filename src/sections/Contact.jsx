@@ -2,6 +2,7 @@ import React, {useRef, useState} from 'react'
 import TitleSection from "../components/TitleSection.jsx";
 import TiltCard from "../components/TiltCard.jsx";
 import emailjs from "@emailjs/browser";
+import FlashMessage from "../components/Flash.jsx";
 
 const Contact = () => {
     const formRef = useRef(null);
@@ -13,10 +14,19 @@ const Contact = () => {
     });
 
     const [loading, setLoading] = useState(false);
+    const [flash, setFlash] = useState({
+        message: "",
+        type: "success",
+        show: false,
+    });
 
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
+    };
+
+    const handleFlashClose = () => {
+        setFlash({ ...flash, show: false });
     };
 
     const handleSubmit = async (e) => {
@@ -32,8 +42,18 @@ const Contact = () => {
                 import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
             );
             setFormData({name: "", email: "", subject: "", message: ""});
+            setFlash({
+                message: "Message envoyé. Je reviens vers vous au plus vite.",
+                type: "success",
+                show: true,
+            });
         } catch (error) {
             console.error('EMAILJS_ERROR', error);
+            setFlash({
+                message: "Une erreur est survenue lors de l'envoi du message.",
+                type: "error",
+                show: true,
+            });
         } finally {
             setLoading(false);
         }
@@ -41,6 +61,13 @@ const Contact = () => {
 
     return (
         <section id="contact" className="w-full h-full md:mt-40 mt-20">
+            {flash.show && (
+                <FlashMessage
+                    message={flash.message}
+                    type={flash.type}
+                    onClose={handleFlashClose}
+                />
+            )}
             <div className="sm:py-10 py-5 sm:px-5 px-2.5">
                 <TitleSection title="Contact" subTitle="Prendre contact" />
                 <div className="contact-container flex flex-col lg:flex-row py-5 gap-5">
