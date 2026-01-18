@@ -5,11 +5,8 @@ export const cirad = {
     date: new Date(2025, 1, 0),
     repo: "",
     summary:
-        "Informatisation d'un jeu sérieux hybride conçu pour sensibiliser les acteurs de la filière mangue en Afrique face à l'infestation de la mouche des fruits, et faciliter la collecte de données scientifiques.",
-    thumbnail: {
-        type: "image",
-        source: "gallery/ciradUI.png"
-    },
+        "Informatisation d'un jeu sérieux hybride conçu pour sensibiliser les acteurs de la filière mangue en Afrique face à l'infestation de la mouche des fruits",
+    thumbnail: {},
     context:
         "Dans le cadre de mon stage de deuxième année de **BUT Informatique**, j'ai réalisé un stage au sein du [CIRAD](https://www.cirad.fr/). Ma mission consistait à développer une **interface graphique ergonomique** en *Python* pour accueillir un **jeu sérieux hybride** nommé \"Course contre la mouche\", basé sur un modèle scientifique. En partant d’un script initialement codé en *R*, intégrant le modèle, j’ai assuré sa refactorisation en *Python*, ainsi que la conception de la mécanique du jeu et de l’interface graphique. L’application est déployable sous forme d’un **exécutable** compatible avec les trois principaux systèmes d’exploitation : *Windows*, *macOS* et *Linux*. \n\n L’objectif principal de cette mission était de **simplifier la saisie des données** issues d’une partie de jeu dans le modèle, afin de fluidifier les processus d’exploitation. Un second objectif était de rendre le jeu accessible à un public plus large en intégrant la **localisation** (multilingue) dans l’application. Celle-ci remplit une double fonction : être à la fois un **support pédagogique** pour sensibiliser les acteurs de la filière mangue à l’infestation par la mouche des fruits, et un **outil de recherche** permettant l’enregistrement et l’exploitation des données issues des sessions de jeu.",
     competences: [
@@ -38,7 +35,7 @@ export const cirad = {
         },
     ],
     assets_dir: "/assets/projects/cirad/",
-    logo: "logo.ico",
+    logo: "",
     gallery: {
         name: "image",
         dir: "gallery/",

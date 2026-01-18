@@ -108,11 +108,11 @@ const Project = () => {
                             </div>
                             <img className="modal-image" src={getImageSrc(currentImage)} alt={currentImage.title} />
 
-                            <button className="modal-next rounded-full w-20 h-20 right-1 top-1/2 absolute bg-tertiary" onClick={(e) => { e.stopPropagation(); nextImage(); }}>
+                            <button className="modal-next rounded-full w-20 h-20 right-1 bottom-10 md:top-1/2 fixed md:absolute bg-tertiary" onClick={(e) => { e.stopPropagation(); nextImage(); }}>
                                 <ArrowRightCircleSolid className="w-full h-full hover:text-secondary transition" />
                             </button>
 
-                            <button className="modal-previous rounded-full w-20 h-20 left-1 top-1/2 absolute bg-tertiary" onClick={(e) => { e.stopPropagation(); prevImage(); }}>
+                            <button className="modal-previous rounded-full w-20 h-20 left-1 bottom-10 md:top-1/2 fixed md:absolute bg-tertiary" onClick={(e) => { e.stopPropagation(); prevImage(); }}>
                                 <ArrowLeftCircleSolid className="w-full h-full hover:text-secondary transition"/>
                             </button>
                         </div>

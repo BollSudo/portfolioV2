@@ -38,7 +38,12 @@
   }
 
   .timeline {
-    @apply absolute z-30 h-[110%] -top-10 w-28 bg-black;
+    @apply absolute z-30 h-[100%] -top-0 w-28 bg-black;
+    mask-image: linear-gradient(
+            to bottom,
+            transparent 0%,
+            black 20%
+    );
   }
 
   .timeline-logo {

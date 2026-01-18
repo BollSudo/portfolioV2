@@ -5,7 +5,7 @@ export const veryBadSplit = {
     date: new Date(2025, 5, 0),
     repo: "https://github.com/BollSudo/A2-SAE-VeryBadSplit",
     summary:
-        "Audit, optimisation et évolution d'une plateforme de gestion de dépenses événementielles par l'application des normes de sécurité et l'intégration de fonctionnalités réactives et ergonomiques",
+        "Audit, optimisation et évolution d'une plateforme de gestion de dépenses événementielles",
     thumbnail: {
         type: "image",
         source: "gallery/pageEventTri.png"

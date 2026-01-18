@@ -47,7 +47,7 @@ const Carrier = () => {
             scrollTrigger: {
                 trigger: '.timeline',
                 start: 'top center',
-                end: '80% center',
+                end: '90% center',
                 onUpdate: (self) => {
                     gsap.to('.timeline', {
                         scaleY: 1 - self.progress

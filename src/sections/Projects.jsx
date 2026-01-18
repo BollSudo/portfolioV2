@@ -4,6 +4,7 @@ import {projects} from "../constants/projects.js";
 import ProjectCardContent from "../components/ProjectCardContent.jsx";
 import { useContext } from "react";
 import { AppContext } from "../context/AppContext";
+import {PageLeft, PageRight} from "iconoir-react";
 
 const Projects = () => {
     const cardRefs = useRef([]);
@@ -16,8 +17,10 @@ const Projects = () => {
     const handleMouseMove = (e) => {
         if (!cardRefs.current) return;
         cardRefs.current.forEach((carte) => {
+            if (!carte) return;
             const blob = carte.querySelector(".card-blob");
             const fakeblob = carte.querySelector(".card-fakeblob");
+            if (!blob || !fakeblob) return;
             const rec = fakeblob.getBoundingClientRect();
 
             blob.animate(
@@ -35,7 +38,9 @@ const Projects = () => {
     const handleMouseEnter = () => {
         if (!cardRefs.current) return;
         cardRefs.current.forEach((carte) => {
+            if (!carte) return;
             const blob = carte.querySelector(".card-blob");
+            if (!blob) return;
             blob.style.opacity = 1;
         });
     }
@@ -43,7 +48,9 @@ const Projects = () => {
     const handleMouseLeave = () => {
         if (!cardRefs.current) return;
         cardRefs.current.forEach((carte) => {
+            if (!carte) return;
             const blob = carte.querySelector(".card-blob");
+            if (!blob) return;
             blob.style.opacity = 0;
         });
     }
@@ -142,20 +149,38 @@ const Projects = () => {
             </div>
 
             <div className="relative w-[90%] mx-auto">
-                <button
+                <PageLeft
                     onClick={handlePrev}
-                    className={`absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-600 disabled:opacity-30 ${currentIndex === 0 ? "hidden" : ""}`}
                     disabled={currentIndex === 0}
-                >
-                    ←
-                </button>
-                <button
+                    className={`
+                        absolute left-4 top-1/2 -translate-y-1/2 z-20
+                        h-12 w-12 flex items-center justify-center
+                        rounded-full
+                        bg-secondary text-tertiary text-xl
+                        shadow-lg shadow-black/40
+                        hover:bg-secondary hover:scale-110
+                        active:scale-95
+                        transition
+                        disabled:opacity-30 disabled:pointer-events-none
+                        ${currentIndex === 0 ? "hidden" : ""}
+                      `}
+                />
+                <PageRight
                     onClick={handleNext}
-                    className={`absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-600 disabled:opacity-30 ${currentIndex === maxIndex ? "hidden" : ""}`}
                     disabled={currentIndex === maxIndex}
-                >
-                    →
-                </button>
+                    className={`
+                        absolute right-4 top-1/2 -translate-y-1/2 z-20
+                        h-12 w-12 flex items-center justify-center
+                        rounded-full
+                        bg-secondary text-tertiary text-xl
+                        shadow-lg shadow-black/40
+                        hover:bg-secondary hover:scale-110
+                        active:scale-95
+                        transition
+                        disabled:opacity-30 disabled:pointer-events-none
+                        ${currentIndex === maxIndex ? "hidden" : ""}
+                      `}
+                />
                 <div
                     onMouseEnter={handleMouseEnter} onTouchStart={handleMouseEnter}
                     onMouseLeave={handleMouseLeave} onTouchEnd={handleMouseLeave}

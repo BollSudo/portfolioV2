@@ -24,7 +24,7 @@ const App = () => {
                     <main className="mx-auto overflow-x-hidden bg-black">
                         <Routes>
                             <Route path="/" element={<Home />} />
-                            <Route path="/project/:projectId" element={<Project />} />
+                            <Route path="/projects/:projectId" element={<Project />} />
                         </Routes>
                     </main>
                     <Footer />

@@ -6,13 +6,15 @@ const ProjectCardContent = ({project}) => {
     return (
         <div className="flex flex-col h-full w-full px-3">
             <div className="flex flex-col items-center gap-2">
-                <h1 className="text-shadow-tertiary text-shadow-lg text-3xl font-bold mt-10">{project.name}</h1>
+                <div className="flex gap-2 items-center justify-center mt-5">
+                    {project.logo ? (
+                        <img className="h-[40px] w-auto" src={project.assets_dir + project.logo} alt={project.name} />
+                    ) : <div className="h-[40px]"></div>}
+                    <h1 className="text-shadow-tertiary text-shadow-lg text-3xl font-bold text-center">{project.name}</h1>
+                </div>
                 <p>{project.date.getFullYear()}</p>
-                {project.logo ? (
-                    <img className="h-[50px] w-auto" src={project.assets_dir + project.logo} alt={project.name} />
-                ) : <div className="h-[50px]"></div>}
             </div>
-            <div className="project-summary flex-1 max-h-1/4 overflow-hidden">
+            <div className="project-summary flex-1 max-h-1/4 overflow-hidden italic text-sm">
                 <p className="text-center line-clamp-6 pt-5">
                     {project.summary}
                 </p>
@@ -30,8 +32,8 @@ const ProjectCardContent = ({project}) => {
                         <img key={index} className="h-5" src={"assets/logos/" + technologies.find((t) => t.name === tech).icon} alt={tech.name} />
                     ))}
                 </div>
-                    <Link to={"/project/" + project.id} className="btn-custom h-fit p-1">
-                        Voir plus
+                    <Link to={"/projects/" + project.id} className="btn-custom h-fit p-1">
+                        Explorer
                     </Link>
             </div>
         </div>
