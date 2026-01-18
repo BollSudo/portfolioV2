@@ -30,6 +30,7 @@ jobs:
           echo "VITE_APP_EMAILJS_SERVICE_ID=${{ vars.VITE_APP_EMAILJS_SERVICE_ID }}" >> .env
           echo "VITE_APP_EMAILJS_TEMPLATE_ID=${{ vars.VITE_APP_EMAILJS_TEMPLATE_ID }}" >> .env
           echo "VITE_APP_EMAILJS_PUBLIC_KEY=${{ secrets.VITE_APP_EMAILJS_PUBLIC_KEY }}" >> .env
+          echo "VITE_BASE_URL=${{ vars.VITE_BASE_URL }}" >> .env
 
       - name: Build
         run: npm run build

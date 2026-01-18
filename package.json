@@ -17,6 +17,7 @@
     "@react-three/postprocessing": "^3.0.4",
     "@react-three/rapier": "^2.1.0",
     "@tailwindcss/vite": "^4.1.4",
+    "dotenv": "^17.2.3",
     "gsap": "^3.13.0",
     "iconoir-react": "^7.11.0",
     "leva": "^0.10.0",
