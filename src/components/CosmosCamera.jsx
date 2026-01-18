@@ -8,7 +8,7 @@ const CosmosCamera = ({children}) => {
     const { isMobile } = useContext(AppContext)
 
     useFrame((state, delta) => {
-        easing.damp3(state.camera.position, [0, 0, 20], 0.25, delta)
+        easing.damp3(state.camera.position, [0, 0, 10], 0.5, delta)
 
         if (!isMobile) {
             easing.dampE(
