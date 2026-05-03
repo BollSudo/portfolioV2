@@ -6,6 +6,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 import {AppContext} from "@/context/AppContext.jsx";
+import {HashLink as Link} from "react-router-hash-link";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -60,7 +61,14 @@ const Carrier = () => {
     return (
         <section id="carrier" className="w-full h-full md:mt-40 mt-20">
             <div className="sm:py-10 py-5 sm:px-5 px-2.5">
-                <TitleSection title="Parcours" subTitle="Expérience" />
+                <div className="justify-center items-center flex flex-col gap-5">
+                    <TitleSection title="Parcours" subTitle="Expérience" />
+                    <span>
+                    <Link to="/competences" className="italic underline text-center opacity-70 text-xs">
+                        Portfolio d'apprentissage BUT
+                    </Link>
+                </span>
+                </div>
                 <div className="mt-32 relative">
                     <div className="relative z-50 xl:space-y-32 space-y-10">
                         {experiences.map((card, index) => (

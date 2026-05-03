@@ -3,6 +3,7 @@ import Navbar from "./sections/Navbar.jsx";
 import { AppProvider } from "./context/AppContext.jsx";
 import Home from "./pages/Home.jsx";
 import Project from "./pages/Project.jsx";
+import Portfolio from "./pages/Portfolio.jsx";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./sections/Footer.jsx";
 import ScrollToTop from "./util/ScrollToTop.jsx";
@@ -25,6 +26,7 @@ const App = () => {
                         <Routes>
                             <Route path="/" element={<Home />} />
                             <Route path="/projects/:projectId" element={<Project />} />
+                            <Route path="/competences" element={<Portfolio />} />
                         </Routes>
                     </main>
                     <Footer />

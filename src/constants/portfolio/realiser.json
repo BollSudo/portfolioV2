@@ -1,0 +1,255 @@
+{
+  "id": "realiser",
+  "titre": "Réaliser",
+  "description": "",
+  "niveau": {
+    "numero": 3,
+    "objectif": "Adapter des applications sur un ensemble de supports (embarqué, web, mobile, IoT...)"
+  },
+  "ac": [
+    {
+      "id": "AC1",
+      "titre": "Choisir et implémenter les architectures adaptées"
+    },
+    {
+      "id": "AC2",
+      "titre": "Faire évoluer une application existante"
+    },
+    {
+      "id": "AC3",
+      "titre": "Intégrer des solutions dans un environnement de production"
+    }
+  ],
+  "ce": [
+    "En respectant les besoins décrits par le client",
+    "En appliquant les principes algorithmiques",
+    "En veillant à la qualité du code et à sa documentation",
+    "En choisissant les ressources techniques appropriées"
+  ],
+  "niveaux_precedents": [
+    {
+      "numero": 1,
+      "objectif": "Implémenter des applications informatiques",
+      "ac": [
+        { "id": "AC1", "titre": "Implémenter des conceptions simples" },
+        { "id": "AC2", "titre": "Élaborer des conceptions simples" },
+        { "id": "AC3", "titre": "Faire des essais et évaluer leurs résultats en regard des spécifications" },
+        { "id": "AC4", "titre": "Développer des interfaces utilisateurs" }
+      ],
+      "ce": [
+        "En respectant les besoins décrits par le client",
+        "En appliquant les principes algorithmiques",
+        "En veillant à la qualité du code et à sa documentation",
+        "En choisissant les ressources techniques appropriées"
+      ],
+      "preuves": [
+        {
+          "titre": "Trains — Numérisation du jeu de plateau (Java)",
+          "contexte": "Projet de première année de BUT Informatique réalisé en binôme sur trois mois. Numérisation du jeu de plateau Trains© sous forme d'application standalone Java, depuis la mécanique du jeu jusqu'à l'IHM JavaFX.",
+          "argumentation": "Ce projet valide l'ensemble des AC de niveau 1 : j'ai élaboré et implémenté des conceptions simples (AC1, AC2) via la modélisation orientée objet en appliquant les principes de programmation (héritage, YAGNI, KISS, DRY...), développé une interface utilisateur ergonomique avec JavaFX (AC4) intégrant bindings et listeners, et fait des essais validés par TDD avec JUnit (AC3). Le packaging de l'application en exécutable Windows (JPackage + WiX) démontre la capacité à choisir les ressources techniques appropriées.",
+          "ac_lies": ["AC1", "AC2", "AC3", "AC4"],
+          "projet_ref": "trains",
+          "images": [
+            { "src": "/assets/projects/trains/gallery/trainsIHM.png", "alt": "Trains - Interface principale" },
+            { "src": "/assets/projects/trains/gallery/junit.png", "alt": "Trains - Tests JUnit" }
+          ]
+        },
+        {
+          "titre": "NDI 2024 — Nuit de l'Info (Symfony + Bootstrap)",
+          "contexte": "Compétition nationale de développement web en une nuit. En équipe de six, développement d'un site web sur le thème 'Corps humain et océan' (fondation Race for Water), avec Symfony, Bootstrap et SCSS.",
+          "argumentation": "Ce projet valide l'AC4 (Développer des interfaces utilisateurs) et l'AC1 (Implémenter des conceptions simples) : j'ai réalisé la template du site, développé la page d'accueil et géré le gitflow. La découverte d'une architecture MVC complète avec Symfony en contexte réel de compétition démontre la capacité à implémenter rapidement des conceptions sous contrainte, en respectant les besoins du défi révélé le soir même.",
+          "ac_lies": ["AC1", "AC4"],
+          "projet_ref": "ndi2024",
+          "images": [
+            { "src": "/assets/projects/ndi2024/gallery/ndi2024site.png", "alt": "NDI 2024 - Site web" }
+          ]
+        },
+        {
+          "titre": "SAE Sudoku (1.01) — Jeu interactif Java (User vs IA)",
+          "contexte": "Première SAE de 1ère année de BUT Informatique, réalisée en binôme. Développement d'un jeu de Sudoku interactif jouable en console, entièrement codé en Java. Le projet comprenait une version de base et plusieurs extensions : IA améliorée, détection de triche, génération de grille niveau facile. Le code est documenté via un Readme.txt et les méthodes sont commentées.",
+          "argumentation": "Ce projet est l'une des premières implémentations concrètes de la compétence Réaliser. J'ai implémenté des conceptions simples (AC1) en codant les algorithmes de l'algorithmique initiatique : variables, types, boucles, conditions, parcours partiels et complets, fonctions, tableaux et pile. Toutes les méthodes étant statiques, ce projet constitue la base avant l'approche POO. Les essais et validations (AC3) ont été conduits pour vérifier que la mécanique du jeu, l'IA et la détection de triche répondent aux spécifications. L'organisation du travail via GitHub introduit dès le début la gestion de versions comme outil de qualité du développement en binôme.",
+          "ac_lies": ["AC1", "AC3"],
+          "projet_ref": null,
+          "images": []
+        },
+        {
+          "titre": "SAE E3Cete (1.02) — Jeu de SET en Java avec Programmation Orientée Objet",
+          "contexte": "SAE de 1ère année de BUT Informatique réalisée en binôme. Développement du jeu de SET (E3Cete) en Java depuis la console, avec une architecture orientée objet : classes Cartes, Paquet, Table, Jeu et Enum. Le projet comprend une version de base, des extensions et un compte rendu rédigé en LaTeX. Hébergé sur GitLab de l'IUT.",
+          "argumentation": "Ce projet valide l'AC2 (Élaborer des conceptions simples) à travers la conception d'une architecture POO structurée : séparation des constituants du jeu en classes distinctes et utilisation des Enum — première modélisation orientée objet. L'AC1 (Implémenter des conceptions simples) est validé par l'implémentation de cette architecture en Java, avec un code organisé, commenté et documenté via un fichier Readme.txt. L'utilisation de GitLab pour le versioning collaboratif et la rédaction du compte rendu en LaTeX illustrent le respect des bonnes pratiques dès la 1ère année.",
+          "ac_lies": ["AC1", "AC2"],
+          "projet_ref": null,
+          "images": []
+        },
+        {
+          "titre": "SAE Escape Game (1.05) & SAE Controverse (1.06) — Sites web HTML/CSS",
+          "contexte": "Deux projets web de 1ère année réalisés en groupe. La SAE 1.05 consistait à développer un site vitrine pour un Escape Game ('The Killer's Run') en groupe de cinq. La SAE 1.06 portait sur un site responsive multi-pages autour d'une controverse sociotechnique ('les techs nuisent-ils à l'environnement ?') en trinôme, avec menu burger adaptatif, diapositives, formulaire et ancres. Les deux sites sont hébergés sur le serveur de l'IUT.",
+          "argumentation": "Ces deux projets valident l'AC4 (Développer des interfaces utilisateurs) et l'AC1 (Implémenter des conceptions simples) dans le domaine du web. Pour la SAE Escape Game, j'ai implémenté une interface HTML/CSS avec barre de navigation, menu déroulant, liens internes et gestion des flexbox, en accord avec la demande client (thème et contenu). La SAE Controverse introduit la responsivité : le menu burger adaptatif selon la taille de l'écran constitue une première expérience de développement d'interfaces adaptatives. Les deux codes sont organisés, indentés et commentés, avec respect des besoins client recueillis lors d'échanges oraux et écrits.",
+          "ac_lies": ["AC1", "AC4"],
+          "projet_ref": null,
+          "images": []
+        },
+        {
+          "titre": "L1PHY — Simulation de réservoir de particules (Python / Tkinter)",
+          "contexte": "Projet réalisé en 1ère année de Licence Physique (UE HLIN204 — Introduction à la Programmation pour la Physique). Développement d'une simulation de boîtes de particules de gaz en Python avec une interface graphique Tkinter, permettant de visualiser l'état et les statistiques de chaque particule à un instant donné.",
+          "argumentation": "Ce projet extrascolaire valide l'AC1 (Implémenter des conceptions simples) dans un contexte pluridisciplinaire (physique et informatique) et dans un langage différent de Java. J'ai implémenté des algorithmes de base — gestion des collisions, animation continue et calcul de propriétés physiques — démontrant une capacité à transposer des conceptions algorithmiques simples dans un nouveau langage. L'AC3 (Faire des essais et évaluer les résultats) est illustré par la validation des comportements simulés par rapport aux lois physiques théoriques attendues. L'AC4 (Développer des interfaces utilisateurs) est validé par la conception de l'interface Tkinter permettant une visualisation en temps réel des propriétés des particules.",
+          "ac_lies": ["AC1", "AC3", "AC4"],
+          "projet_ref": null,
+          "images": []
+        }
+      ]
+    },
+    {
+      "numero": 2,
+      "objectif": "Partir des exigences et aller jusqu'à une application complète",
+      "ac": [
+        { "id": "AC1", "titre": "Élaborer et implémenter les spécifications fonctionnelles et non fonctionnelles à partir des exigences" },
+        { "id": "AC2", "titre": "Appliquer des principes d'accessibilité et d'ergonomie" },
+        { "id": "AC3", "titre": "Adopter de bonnes pratiques de conception et de programmation" },
+        { "id": "AC4", "titre": "Vérifier et valider la qualité de l'application par les tests" }
+      ],
+      "ce": [
+        "En respectant les besoins décrits par le client",
+        "En appliquant les principes algorithmiques",
+        "En veillant à la qualité du code et à sa documentation",
+        "En choisissant les ressources techniques appropriées"
+      ],
+      "preuves": [
+        {
+          "titre": "StudAdvisor — Application PHP MVC complète avec SCRUM",
+          "contexte": "Projet tuteuré du semestre 3 de BUT Informatique, réalisé en équipe de cinq sur quatre mois. L'application devait répondre aux exigences fonctionnelles et non fonctionnelles d'un responsable d'études.",
+          "argumentation": "Ce projet est la première réalisation couvrant l'ensemble du cycle de développement (AC1 à AC4). Les exigences ont été formalisées en User Stories et affinées sprint par sprint avec le Product Owner. Les principes d'accessibilité et de responsivité (AC2) ont été respectés dans les interfaces. Les patterns SOLID, DRY, KISS et les design patterns (Singleton, Stratégie, Composite) illustrent les bonnes pratiques de conception (AC3). La double validation formulaire (côté client et serveur) et la conception robuste de la base de données MariaDB participent également à la qualité. Des tests ont validé les fonctionnalités principales (AC4).",
+          "ac_lies": ["AC1", "AC2", "AC3", "AC4"],
+          "projet_ref": "studAdvisor",
+          "images": [
+            { "src": "/assets/projects/studAdvisor/gallery/agreg.png", "alt": "StudAdvisor - Agrégation des notes" },
+            { "src": "/assets/projects/studAdvisor/gallery/importation.png", "alt": "StudAdvisor - Importation des données" }
+          ]
+        },
+        {
+          "titre": "Very Bad Split — Audit, refactorisation et tests (PHP/Symfony)",
+          "contexte": "Projet de semestre 4. Mission : améliorer une application existante en corrigeant ses failles, en refactorisant le code vers Symfony et en ajoutant des tests unitaires.",
+          "argumentation": "Ce projet consolide l'AC3 (bonnes pratiques) et l'AC4 (tests). La migration vers Symfony (routage par attributs, services avec autowiring, conteneur de dépendances) illustre l'adoption de pratiques modernes de programmation. L'implémentation de tests unitaires avec une couverture fonctionnelle satisfaisante et le recours à une bibliothèque réactive personnalisée pour l'ergonomie front (AC2) démontrent une approche professionnelle de la qualité logicielle.",
+          "ac_lies": ["AC2", "AC3", "AC4"],
+          "projet_ref": "veryBadSplit",
+          "images": [
+            { "src": "/assets/projects/veryBadSplit/gallery/pageCompteTri.png", "alt": "Very Bad Split - Page compte" },
+            { "src": "/assets/projects/veryBadSplit/gallery/autowire.png", "alt": "Very Bad Split - Autowiring Symfony" }
+          ]
+        },
+        {
+          "titre": "NDI 2024 — Développement complet Symfony + Bootstrap en une nuit",
+          "contexte": "Nuit de l'Info 2024, compétition nationale en équipe de six. Développement d'un site web Symfony/Bootstrap avec architecture MVC complète.",
+          "argumentation": "Ce projet valide l'AC1 en contexte contraint : implémenter une application complète respectant un défi révélé le soir même, avec des exigences fonctionnelles précises. La réalisation de la template du site et de la page d'accueil illustre les principes d'ergonomie (AC2). L'utilisation de Symfony comme framework MVC et de SCSS pour la gestion des variables de style reflète l'adoption de bonnes pratiques (AC3).",
+          "ac_lies": ["AC1", "AC2", "AC3"],
+          "projet_ref": "ndi2024",
+          "images": [
+            { "src": "/assets/projects/ndi2024/gallery/ndi2024site.png", "alt": "NDI 2024 - Site web" }
+          ]
+        }
+      ]
+    }
+  ],
+  "preuves": [
+    {
+      "titre": "MyAvatar — Plateforme de gestion d'avatars (Symfony)",
+      "contexte": "Projet de 3e année de BUT Informatique, développé en équipe de quatre développeurs sur environ deux mois. L'objectif était de créer un clone du service Gravatar, permettant aux utilisateurs de gérer un avatar associé à leur adresse email, intégrable sur divers sites web.",
+      "argumentation": "Ce projet illustre l'AC1 (choisir et implémenter les architectures adaptées) car j'ai contribué à la mise en place d'une architecture moderne intégrant des endpoints sécurisés, une base de données PostgreSQL, une infrastructure Docker pour le développement, et une pipeline CI/CD GitLab. Le choix de Symfony comme framework MVC et de Doctrine ORM pour la couche données est une décision d'architecture justifiée pour assurer la maintenabilité. Pour l'AC3 (Intégrer des solutions dans un environnement de production), le pipeline CI/CD GitLab que j'ai participé à configurer automatise les tests et le déploiement, garantissant une intégration continue fiable. Le respect du principe SOLID, la génération de rapports de couverture de tests avec PHPUnit, et la mise en place d'un système d'internationalisation côté serveur font preuves de développement professionnel et qui répond aux critères de qualité.",
+      "ac_lies": ["AC1", "AC3"],
+      "projet_ref": "myAvatar",
+      "images": [
+        { "src": "/assets/projects/myAvatar/gallery/myAvatarHome.png", "alt": "MyAvatar - Page d'accueil" },
+        { "src": "/assets/projects/myAvatar/gallery/myAvatarUI.png", "alt": "MyAvatar - Interface utilisateur" },
+        { "src": "/assets/projects/myAvatar/gallery/coverage.png", "alt": "MyAvatar - Couverture de tests PHPUnit" },
+        { "src": "/assets/projects/myAvatar/gallery/extrait-pipeline-cicd.png", "alt": "MyAvatar - Pipeline CI/CD GitLab" },
+        { "src": "/assets/projects/myAvatar/gallery/pipeline-captures.png", "alt": "MyAvatar - Captures de la pipeline" }
+      ]
+    },
+    {
+      "titre": "RateYourGames — Application de notation de jeux vidéo (Symfony & Vue.js)",
+      "contexte": "Projet de semestre 5 du BUT Informatique développé en équipe de trois. L'application permet aux utilisateurs de rechercher, noter et critiquer des jeux vidéo. Elle repose sur Symfony et API Platform pour le backend et Vue.js pour le frontend, avec une base de données PostgreSQL.",
+      "argumentation": "Ce projet montre ma capacité à choisir et implémenter une architecture découplée (AC1) : une API REST pour le backend (Symfony & API Platform), tandis que le frontend est développé indépendamment en Vue.js avec TypeScript. Ce choix architectural facilite la scalabilité et la séparation des responsabilités. J'ai travaillé sur les deux parties : configuration et documentation des endpoints du backend en manipulant les DataProvider et DataProcessor d'API Platform, modélisation UML, création de jeu de données fictives avec les DataFixtures de Symfony pour tester l'application, sécurisation des routes avec les Voters et gestions de permissions, ainsi que l'implémentation de fonctionnalités frontend. L'intégration de Docker pour la conteneurisation et le déploiement renvoie à l'AC3.",
+      "ac_lies": ["AC1", "AC3"],
+      "projet_ref": null,
+      "images": [
+        { "src": "/assets/projects/rateYourGames/gallery/rateyourgames-homepage.jpg", "alt": "RateYourGames - Page d'accueil" },
+        { "src": "/assets/projects/rateYourGames/gallery/rateyourgames-favorites.jpg", "alt": "RateYourGames - Page favoris" },
+        { "src": "/assets/projects/rateYourGames/gallery/debut-modelisation-uml.png", "alt": "RateYourGames - Modélisation UML" },
+        { "src": "/assets/projects/rateYourGames/gallery/documentation.png", "alt": "RateYourGames - Documentation API Platform" },
+        { "src": "/assets/projects/rateYourGames/gallery/extrait-entity-ressource-game.png", "alt": "RateYourGames - Entité et ressource Game" },
+        { "src": "/assets/projects/rateYourGames/gallery/extrait-voter-jeu.png", "alt": "RateYourGames - Voter Symfony" },
+        { "src": "/assets/projects/rateYourGames/gallery/fixture-review.png", "alt": "RateYourGames - Fixtures de review" }
+      ]
+    },
+    {
+      "titre": "StudAdvisor — Plateforme d'aide à la poursuite d'études (PHP)",
+      "contexte": "Projet de semestre 3 de BUT Informatique, réalisé en équipe de cinq étudiants sur environ quatre mois. L'objectif était de développer un site web dynamique, portable et sécurisé en PHP pour favoriser l'aide à la poursuite d'études des étudiants de BUT 3.",
+      "argumentation": "Ce projet valide l'AC1 à travers le choix délibéré d'une architecture MVC sans framework, organisée autour de patterns de conception justifiés (Singleton, Stratégie, Composite) et des principes SOLID, DRY et KISS. L'absence de framework a exigé une maîtrise approfondie de l'architecture. Le développement du système d'importation de données et du moteur d'agrégations de notes démontre une capacité à concevoir des composants complexes. La conception d'une base de données MariaDB, les formulaires avec double validation (côté client et serveur) et les interfaces accessibles et responsives témoignent d'un développement soigné, adapté aux contraintes techniques disponibles et aux besoins clients.",
+      "ac_lies": ["AC1"],
+      "projet_ref": "studAdvisor",
+      "images": [
+        { "src": "/assets/projects/studAdvisor/gallery/agreg.png", "alt": "StudAdvisor - Agrégation des notes" },
+        { "src": "/assets/projects/studAdvisor/gallery/login.png", "alt": "StudAdvisor - Connexion" },
+        { "src": "/assets/projects/studAdvisor/gallery/modeleEA.png", "alt": "StudAdvisor - Modèle entité-association" }
+      ]
+    },
+    {
+      "titre": "Very Bad Split — Audit et évolution d'une application web (Symfony)",
+      "contexte": "Projet de semestre 4 du BUT Informatique, réalisé en équipe de trois développeurs. La mission consistait à auditer une application existante de gestion de dépenses événementielles, à identifier ses failles de sécurité et à la faire évoluer avec de nouvelles fonctionnalités.",
+      "argumentation": "Ce projet illustre directement l'AC2 (Faire évoluer une application existante). J'ai d'abord participé à la réalisation d'un audit complet de l'application existante pour identifier les vulnérabilités (injections SQL, XSS, CSRF, stockage de mots de passe en clair, schéma BD non normalisé...). Sur cette base, j'ai procédé à une refactorisation du code vers Symfony (système de routage par attributs, conteneur de dépendances avec autowiring), à la normalisation de la base de données en 3NF via le théorème de Casey-Delobel, et à l'implémentation de tests unitaires avec couverture satisfaisante. Ce projet démontre la capacité à comprendre un système existant, à l'analyser de manière critique et à le faire évoluer de manière structurée.",
+      "ac_lies": ["AC2"],
+      "projet_ref": "veryBadSplit",
+      "images": [
+        { "src": "/assets/projects/veryBadSplit/gallery/pageEventTri.png", "alt": "Very Bad Split - Page événement" },
+        { "src": "/assets/projects/veryBadSplit/gallery/structTri.png", "alt": "Very Bad Split - Structure base de données" }
+      ]
+    },
+    {
+      "titre": "Race against the Fly — Application de bureau Python (Stage)",
+      "contexte": "Stage de deuxième année de BUT Informatique, réalisé au sein du CIRAD. La mission consistait à développer une interface graphique ergonomique en Python pour accompagner un jeu sérieux hybride basé sur un modèle scientifique initialement codé en R.",
+      "argumentation": "Ce projet valide l'AC2 (Faire évoluer une application existante) à travers la refactorisation complète d'un script R en Python. J'ai assuré la refactorisation en Python du modèle scientifique existant, en concevant les nouvelles entités via un diagramme UML et en respectant les principes orientés objet SOLID. L'application est déployable sous forme d'exécutable multiplateforme (Windows, macOS, Linux) grâce à la librairie Nuitka. J'ai aussi intégré une solution de localisation (multilingue), une interface graphique Tkinter, et une pipeline CI/CD pour automatiser les tests de non-régression. Tout cela a été documenté dans un rapport de stage et des guides d'utilisation. Ce stage illustre la capacité à s'adapter à un environnement de production réel dans une organisation de recherche.",
+      "ac_lies": ["AC2", "AC3"],
+      "projet_ref": "cirad",
+      "images": [
+        { "src": "/assets/projects/cirad/gallery/Prototype-figma.png", "alt": "CIRAD - Prototype Figma de l'interface" },
+        { "src": "/assets/projects/cirad/gallery/UML-etats.png", "alt": "CIRAD - Diagramme UML des états" },
+        { "src": "/assets/projects/cirad/gallery/UML.png", "alt": "CIRAD - Diagramme UML des classes" }
+      ]
+    },
+    {
+      "titre": "NDI 2025 — Nuit de l'Info (Vue.js)",
+      "contexte": "Compétition nationale annuelle pendant laquelle des équipes développent un site web en une nuit, du crépuscule à l'aube. En tant que capitaine de l'équipe 'Bureau des savoirs magiques' (6 développeurs), j'ai piloté le développement d'une application web Vue.js sur la thématique NIRD (Numérique Inclusif, Responsable et Durable).",
+      "argumentation": "Ce projet valide l'AC3 (Intégrer des solutions dans un environnement de production). En tant que capitaine, j'ai pris en charge la dockerisation du projet (environnements dev et prod), le déploiement et l'hébergement du site web en production, et la gestion du gitflow. Ces responsabilités m'ont permis de démontrer ma capacité à orchestrer l'intégration d'une solution complète dans un environnement de production réel, sous forte contrainte de temps. L'intégration de Three.js dans Vue.js pour répondre à un défi secondaire illustre également la capacité à choisir des bibliothèques techniques adaptées au domaine.",
+      "ac_lies": ["AC3"],
+      "projet_ref": "ndi2025",
+      "images": [
+        { "src": "/assets/projects/ndi2025/gallery/ndi2025Intro.png", "alt": "NDI 2025 - Site web" },
+        { "src": "/assets/projects/ndi2025/gallery/extrait-github.png", "alt": "NDI 2025 - Extrait GitHub (gitflow)" }
+      ]
+    },
+    {
+      "titre": "TDs Qualité de Développement & Maintenance Applicative — SOLID, Design Patterns, XP, TDD (Java)",
+      "contexte": "Modules de cours de 3e année de BUT Informatique accentués sur la qualité de développement (principes SOLID, analyse de code avec SonarQube, moteur de build Gradle, pratique du TDD, gestion des logs, couverture avec JaCoCo) et la maintenance applicative (Extreme Programming, TDD, Coding Dojo, Kata de programmation, patrons de conception État et Observateur, principes SOLID & STUPID).",
+      "argumentation": "Ces cours valident l'AC1 (Choisir et implémenter les architectures adaptées) à travers l'étude et la pratique des principes SOLID (SRP, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion...) qui constituent un référentiel directement applicable aux choix d'architecture logicielle. L'étude des patrons de conception (structuraux, comportementaux, et creationnels) comme État et Observateur apporte des solutions architecturales éprouvées pour des problèmes récurrents : l'Observateur pour découpler les composants via un système d'abonnement, et l'État pour modéliser les comportements d'un objet selon son contexte interne. L'AC2 (Faire évoluer une application existante) est directement visé par le volet maintenance applicative : l'Extreme Programming fournit un cadre de pratiques pour le développement itératif en environnement changeant, les Coding Dojo et Kata de programmation sont des exercices spécifiquement conçus pour améliorer la qualité du code par la répétition et la refactorisation, et les principes STUPID (Singleton, Tight coupling, Untestability, Premature optimization, Indescriptive naming, Duplication) permettent d'identifier les anti-patterns à corriger dans le code existant.",
+      "ac_lies": ["AC1", "AC2"],
+      "projet_ref": null,
+      "images": [
+        { "src": "/assets/projects/coursSolid/gallery/exemple-logger.png", "alt": "TDs Qualité - Exemple de gestion des logs" },
+        { "src": "/assets/projects/coursSolid/gallery/exemple-test-given-when-then.png", "alt": "TDs Qualité - Test Given-When-Then (TDD)" }
+      ]
+    },
+    {
+      "titre": "AzureSketch — Application web de dessin sous contraintes (Symfony)",
+      "contexte": "SAE de 3e année de BUT Informatique (parcours RACDV), réalisée en équipe de cinq sur cinq sprints SCRUM. L'objectif était de développer un logiciel web de dessin avec des contraintes géométriques permanentes (alignement, centrage, distance) résolues en temps réel via l'algorithme AzureLink. Stack : Symfony + PostgreSQL (back-end), JavaScript vanilla + Konva.js (front-end), Docker, GitLab CI/CD, Webpack.",
+      "argumentation": "Ce projet illustre l'AC1 (Choisir et implémenter les architectures adaptées) à travers plusieurs décisions d'architecture majeures. J'ai conçu et implémenté le système de gestion des formes basé sur le Design Pattern Factory (ShapeFactory délégant à des ShapeStrategy sélectionnées via une énumération ShapeType) et le Command Pattern (encapsulation de chaque action utilisateur avec execute/undo/redo, piles undoStack et redoStack). Le CanvasState implémente le patron Singleton pour centraliser l'état du canevas comme source unique de vérité. J'ai également posé la base du système de contraintes : un ConstraintManager orchestrant un graphe bipartite (variables-contraintes) pour la propagation des changements, une ConstraintFactory avec ConstraintStrategy par type de contrainte, et le binding bidirectionnel entre attributs Konva et variables mathématiques. Les interfaces LoaderInterface, SaverInterface et SerializerInterface garantissent la modularité du système de sauvegarde. Pour l'AC3 (Intégrer des solutions dans un environnement de production), j'ai pris en charge la dockerisation complète du projet avec trois environnements isolés (dev, preprod, prod) configurés via des fichiers .env, et la mise en place de la pipeline GitLab CI/CD assurant un déploiement automatique en pré-production après chaque MR validée dans la branche dev.",
+      "ac_lies": ["AC1", "AC3"],
+      "projet_ref": null,
+      "images": [
+        { "src": "/assets/projects/azureSketch/gallery/canvas.png", "alt": "AzureSketch - Interface du canvas" },
+        { "src": "/assets/projects/azureSketch/gallery/exemple-simple-systeme-contrainte.png", "alt": "AzureSketch - Exemple de système de contraintes" },
+        { "src": "/assets/projects/azureSketch/gallery/extrait-UC-diagramme.png", "alt": "AzureSketch - Diagramme de cas d'utilisation" },
+        { "src": "/assets/projects/azureSketch/gallery/gestion-canvas-UML.png", "alt": "AzureSketch - UML de la gestion du canvas" },
+        { "src": "/assets/projects/azureSketch/gallery/undo-redo-command-pattern.png", "alt": "AzureSketch - Command Pattern undo/redo" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "id": "administrer",
+  "titre": "Administrer des systèmes informatiques communicants complexes",
+  "description": "",
+  "niveau": {
+    "numero": 2,
+    "objectif": "Déployer des services dans une architecture réseau"
+  },
+  "ac": [
+    {
+      "id": "AC1",
+      "titre": "Concevoir et développer des applications communicantes"
+    },
+    {
+      "id": "AC2",
+      "titre": "Utiliser des serveurs et des services réseaux virtualisés"
+    },
+    {
+      "id": "AC3",
+      "titre": "Sécuriser les services et données d'un système"
+    },
+    {
+      "id": "AC4",
+      "titre": "Configurer un poste de travail dans un réseau d'entreprise"
+    }
+  ],
+  "ce": [
+    "En sécurisant le système d'information",
+    "En appliquant les normes en vigueur et les bonnes pratiques architecturales et de sécurité",
+    "En offrant une qualité de service optimale",
+    "En assurant la continuité d'activité"
+  ],
+  "niveaux_precedents": [
+    {
+      "numero": 1,
+      "objectif": "Installer et configurer un poste de travail",
+      "ac": [
+        {
+          "id": "AC1",
+          "titre": "Identifier les différents composants (matériels et logiciels) d'un système numérique"
+        },
+        {
+          "id": "AC2",
+          "titre": "Utiliser les fonctionnalités de base d'un système multitâches / multiutilisateurs"
+        },
+        {
+          "id": "AC3",
+          "titre": "Installer et configurer un système d'exploitation et des outils de développement"
+        },
+        {
+          "id": "AC4",
+          "titre": "Configurer un poste de travail dans un réseau d'entreprise"
+        }
+      ],
+      "preuves": [
+        {
+          "titre": "Installation Linux et configuration d'environnement de développement",
+          "contexte": "Dans le cadre des SAE de première année de BUT Informatique, j'ai appris à installer et configurer un poste de travail complet.",
+          "argumentation": "J'ai créé une clé USB bootable pour installer Ubuntu (interface GNOME) en dual-boot avec Windows et dans une machine virtuelle via VirtualBox. L'environnement de travail comprenait des dossiers partagés entre systèmes, le JDK, et des éditeurs de code (VS Code). J'ai rédigé une notice d'installation et de comparaison entre les deux configurations. J'ai également installé et configuré une pile LAMP, en rédigeant une notice d'installation détaillant les bonnes pratiques de sécurisation (pas d'accès root à la BD, utilisateur Apache dédié, authentification, certificat SSL). L'exploration des composants électroniques (portes logiques, UAL simulée avec CircuitVerse) et la maîtrise du terminal bash (flux I/O, permissions, scripts) complètent cette validation.",
+          "ac_lies": ["AC1", "AC2", "AC3"],
+          "images": []
+        },
+        {
+          "titre": "Outils de versioning et de gestion de données",
+          "contexte": "Au fil des projets de première et deuxième année, j'ai utilisé régulièrement des outils de versioning et de transfert de données.",
+          "argumentation": "J'ai maîtrisé les commandes fondamentales de Git (pull, add, commit, push) et la gestion des conflits (merge, rebase) via GitLab et GitHub. J'ai également utilisé MySQL, MariaDB, FileZilla (FTP, SFTP) et PuTTY (SSH), outils essentiels pour configurer et maintenir un poste de travail dans un environnement réseau professionnel.",
+          "ac_lies": ["AC4"],
+          "images": []
+        }
+      ]
+    }
+  ],
+  "preuves": [
+    {
+      "titre": "Very Bad Split — Conteneurisation Docker et audit de sécurité",
+      "contexte": "Projet de semestre 4 du BUT Informatique. Mission : auditer, sécuriser et améliorer une application web de gestion de dépenses. Le déploiement était géré via Docker (dockerfile, docker-compose, makefile) pour les services Apache, MariaDB et Flyway.",
+      "argumentation": "Ce projet valide les AC2 (Virtualisation) et AC3 (Sécurité). Pour l'AC2, j'ai conteneurisé l'application avec un dockerfile, un docker-compose orchestrant les services (serveur web Apache, base de données MariaDB, gestionnaire de migrations Flyway) et un makefile simplifiant le déploiement. Pour l'AC3, j'ai réalisé un audit de sécurité complet identifiant les vulnérabilités (injections SQL, XSS, CSRF, stockage de données sensibles en cookies, mots de passe en clair, algorithme de hachage déterministe non sécurisé, système de récupération non sécurisé). Les corrections appliquées (requêtes préparées, hachage/salage des mots de passe, tokens CSRF, nonces) illustrent une maîtrise des bonnes pratiques de sécurité web.",
+      "ac_lies": ["AC2", "AC3"],
+      "projet_ref": "veryBadSplit",
+      "images": [
+        { "src": "/assets/projects/veryBadSplit/gallery/pageEventTri.png", "alt": "Very Bad Split - Page événement" },
+        { "src": "/assets/projects/veryBadSplit/gallery/autowire.png", "alt": "Very Bad Split - Autowiring Symfony" }
+      ]
+    },
+    {
+      "titre": "StudAdvisor & GoPetSit™ — Sécurisation des applications web",
+      "contexte": "Projets de deuxième et troisième année. StudAdvisor est une plateforme PHP MVC interagissant avec des données LDAP et des données anonymisées. GoPetSit™ est une application Symfony avec gestion des données personnelles des utilisateurs.",
+      "argumentation": "Ces projets valident l'AC3 (Sécuriser les services et données). Pour StudAdvisor, j'ai implémenté des requêtes SQL préparées (protection injections SQL), l'échappement des balises (protection XSS), la sécurisation des cookies et sessions, des tokens CSRF, et le hachage/salage des mots de passe. La gestion des droits d'accès aux données selon le rôle utilisateur et les normes RGPD (acquisition des certificats CNIL) renforcent la protection des données personnelles. Pour GoPetSit™, j'ai travaillé sur la sécurisation des services Symfony (hashage, rôles, protection des routes), la gestion des données personnelles (visibilité masquable, suppression définitive) et le système de mailing sécurisé.",
+      "ac_lies": ["AC3"],
+      "projet_ref": "studAdvisor",
+      "images": [
+        { "src": "/assets/projects/studAdvisor/gallery/login.png", "alt": "StudAdvisor - Connexion sécurisée" },
+        { "src": "/assets/projects/gps/gallery/pageProfile.png", "alt": "GoPetSit - Page profil" }
+      ]
+    },
+    {
+      "titre": "Race against the Fly — Configuration poste de travail réseau entreprise (Stage CIRAD)",
+      "contexte": "Stage de deuxième année au CIRAD. Configuration du poste de travail informatique relié au réseau de l'entreprise.",
+      "argumentation": "Ce projet valide l'AC4 (Configurer un poste de travail dans un réseau d'entreprise). J'ai installé et configuré les outils nécessaires au développement Python (environnements virtuels, dépendances, outils de build) sur un poste relié au réseau interne du CIRAD. Cette expérience en entreprise m'a permis de comprendre les contraintes réseau d'une organisation réelle (accès VPN, proxy, droits d'installation limités) et d'adapter ma configuration à ces contraintes.",
+      "ac_lies": ["AC4"],
+      "projet_ref": "cirad",
+      "images": []
+    },
+    {
+      "titre": "NDI 2025 — Déploiement et hébergement en production (Docker)",
+      "contexte": "Nuit de l'Info 2025. En tant que capitaine d'équipe, j'ai assuré la dockerisation complète du projet et son déploiement en production.",
+      "argumentation": "Ce projet illustre les AC1 et AC2. Pour l'AC1 (Applications communicantes), l'application Vue.js communique avec des services backend via API. Pour l'AC2 (Services réseaux virtualisés), j'ai configuré les environnements Docker (dev et prod) et orchestré le déploiement sur un serveur d'hébergement, en gérant les configurations réseau (ports, volumes, variables d'environnement). La disponibilité du site ndi2025.bollmaster.com valide l'intégration réussie d'une solution en environnement de production.",
+      "ac_lies": ["AC1", "AC2"],
+      "projet_ref": "ndi2025",
+      "images": [
+        { "src": "/assets/projects/ndi2025/gallery/ndi2025Intro.png", "alt": "NDI 2025 - Site web en production" }
+      ]
+    }
+  ]
+}

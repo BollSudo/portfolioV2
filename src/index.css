@@ -589,6 +589,79 @@
   cursor: pointer;
 }
 
+.modal-zoom-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  z-index: 300;
+  max-width: 82vw;
+  max-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0a0a0a;
+}
+
+.modal-zoom-container .modal-image {
+  max-width: 82vw;
+  max-height: 60vh;
+  border-radius: 0;
+  margin: 0;
+  will-change: transform;
+  transform-origin: center center;
+}
+
+.modal-zoom-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 300;
+  background: rgba(0, 0, 0, 0.55);
+  padding: 4px 14px;
+  border-radius: 999px;
+  backdrop-filter: blur(4px);
+}
+
+.modal-zoom-level {
+  font-family: monospace;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: bold;
+  min-width: 38px;
+  text-align: center;
+}
+
+.modal-zoom-btn {
+  font-size: 18px;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 0 4px;
+  transition: color 0.15s;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-zoom-btn:hover:not(:disabled) {
+  color: #fff;
+}
+
+.modal-zoom-btn:disabled {
+  color: rgba(255, 255, 255, 0.2);
+  cursor: default;
+}
+
+.modal-zoom-separator {
+  width: 1px;
+  height: 14px;
+  background: rgba(255, 255, 255, 0.15);
+  margin: 0 2px;
+}
+
+.modal-zoom-reset {
+  font-size: 15px;
+}
+
 .content-project ul {
   padding: 5px 0;
   list-style-type: disc; /* or square, decimal */

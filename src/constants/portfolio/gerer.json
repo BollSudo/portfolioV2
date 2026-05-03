@@ -1,0 +1,112 @@
+{
+  "id": "gerer",
+  "titre": "Gérer des données de l'information",
+  "description": "",
+  "niveau": {
+    "numero": 2,
+    "objectif": "Optimiser une base de données, interagir avec une application et mettre en œuvre la sécurité"
+  },
+  "ac": [
+    {
+      "id": "AC1",
+      "titre": "Optimiser les modèles de données de l'entreprise"
+    },
+    {
+      "id": "AC2",
+      "titre": "Assurer la confidentialité des données (intégrité et sécurité)"
+    },
+    {
+      "id": "AC3",
+      "titre": "Organiser la restitution de données à travers la programmation et la visualisation"
+    },
+    {
+      "id": "AC4",
+      "titre": "Manipuler des données hétérogènes"
+    }
+  ],
+  "ce": [
+    "En respectant les réglementations sur le respect de la vie privée et la protection des données personnelles",
+    "En respectant les enjeux économiques, sociétaux et écologiques de l'utilisation du stockage de données",
+    "En s'appuyant sur des bases mathématiques",
+    "En assurant la cohérence et la qualité"
+  ],
+  "niveaux_precedents": [
+    {
+      "numero": 1,
+      "objectif": "Concevoir et mettre en place une base de données à partir d'un cahier des charges client",
+      "ac": [
+        {
+          "id": "AC1",
+          "titre": "Mettre à jour et interroger une base de données relationnelle (en requêtes directes ou à travers une application)"
+        },
+        {
+          "id": "AC2",
+          "titre": "Visualiser des données"
+        },
+        {
+          "id": "AC3",
+          "titre": "Concevoir une base de données relationnelle à partir d'un cahier des charges"
+        }
+      ],
+      "preuves": [
+        {
+          "titre": "Modélisation et création de bases de données relationnelles (SAE Première année)",
+          "contexte": "Dans le cadre des projets SAE de première année de BUT Informatique, réalisation de bases de données relationnelles avec Oracle SGBD.",
+          "argumentation": "J'ai modélisé des bases de données à l'aide de diagrammes entité/association conçus avec Looping (modèle E/A pour une application de réservation de créneaux de JDR, et un modèle type Spotify). J'ai écrit des scripts SQL complets (création, modification, insertion, suppression) et utilisé DBeaver pour importer des données initiales sous forme de tableaux temporaires. Ces travaux m'ont permis de maîtriser les notions fondamentales : relations binaires et ternaires, contraintes d'intégrité (domaines, inclusion, exclusion, fonctionnelles), héritage, clés primaires et étrangères.",
+          "ac_lies": ["AC1", "AC3"],
+          "images": []
+        },
+        {
+          "titre": "Études statistiques sur données Spotify (LibreOffice Calc)",
+          "contexte": "En parallèle des projets BD, j'ai mené des études statistiques sur un jeu de données brutes Spotify fourni en format CSV.",
+          "argumentation": "J'ai transformé et analysé les données avec LibreOffice Calc (tri, regroupement, calcul). J'ai extrait les modalités, fréquences, effectifs et indicateurs statistiques (moyenne, médiane, quartiles, écart-type, écart interquartile). En fonction de la nature des variables (qualitatives ou quantitatives), j'ai adapté la restitution visuelle : tableaux, diagrammes en secteurs, diagrammes en bâtons, histogrammes et boxplots.",
+          "ac_lies": ["AC2", "AC3"],
+          "images": []
+        }
+      ]
+    }
+  ],
+  "preuves": [
+    {
+      "titre": "Very Bad Split — Normalisation de base de données en 3NF",
+      "contexte": "Projet de semestre 4. L'application existante présentait un schéma de base de données non normalisé, source d'anomalies de mise à jour et de redondances.",
+      "argumentation": "Ce projet valide l'AC1 (Optimiser les modèles de données). J'ai identifié les dépendances fonctionnelles à partir des règles de gestion de l'application, puis décomposé la relation initiale en Troisième Forme Normale (3NF) via le théorème de Casey-Delobel, garantissant la préservation de l'information. J'ai vérifié l'absence de perte de dépendances fonctionnelles en comparant les fermetures transitives avant et après normalisation. Cette démarche mathématiquement rigoureuse illustre la capacité à optimiser un modèle de données tout en assurant la cohérence et la qualité du schéma final.",
+      "ac_lies": ["AC1"],
+      "projet_ref": "veryBadSplit",
+      "images": [
+        { "src": "/assets/projects/veryBadSplit/gallery/structTri.png", "alt": "Very Bad Split - Structure BD normalisée" },
+        { "src": "/assets/projects/veryBadSplit/gallery/routeTri.png", "alt": "Very Bad Split - Routes" }
+      ]
+    },
+    {
+      "titre": "StudAdvisor — Gestion sécurisée de données sensibles (PHP/MariaDB)",
+      "contexte": "Projet tuteuré du semestre 3. L'application interagissait avec des données issues directement de l'IUT (LDAP) et des données anonymisées sur les notes des étudiants, via une base de données sécurisée MariaDB.",
+      "argumentation": "Ce projet valide les AC2 et AC4. Pour l'AC2 (Confidentialité des données), j'ai géré l'accès aux données selon les droits de l'utilisateur (rôles : responsable d'études, étudiant) et la finalité de l'application. Les requêtes SQL préparées protègent contre les injections, et les données sont manipulées dans le strict respect du RGPD (acquisition des certificats CNIL). Pour l'AC4 (Données hétérogènes), j'ai développé un système d'importation de données : les données brutes (CSV) sont transformées en données relationnelles, stockées en base de données et restituées via une interface web dynamique (PHP) ergonomique et visuelle.",
+      "ac_lies": ["AC2", "AC4"],
+      "projet_ref": "studAdvisor",
+      "images": [
+        { "src": "/assets/projects/studAdvisor/gallery/agreg.png", "alt": "StudAdvisor - Agrégation des notes" },
+        { "src": "/assets/projects/studAdvisor/gallery/importation.png", "alt": "StudAdvisor - Importation CSV" }
+      ]
+    },
+    {
+      "titre": "Race against the Fly — Gestion de données scientifiques (Python/YAML/CSV)",
+      "contexte": "Stage au CIRAD. L'application permettait la saisie de données de jeu dans un modèle scientifique et la restitution des résultats de simulation.",
+      "argumentation": "Ce projet valide les AC3 et AC4. Pour l'AC3 (Restitution de données), j'ai développé une interface graphique Python permettant l'affichage des résultats du modèle scientifique via des graphiques, des tableaux et des logs, ainsi que leur export sous forme de données organisées. Pour l'AC4 (Données hétérogènes), j'ai manipulé et converti des données issues de résultats scientifiques : fichiers de configuration YAML, données de modélisation CSV, résultats numériques du modèle R/Python. Ces données hétérogènes devaient être extraites, converties et présentées de manière ergonomique à des chercheurs non-informaticiens.",
+      "ac_lies": ["AC3", "AC4"],
+      "projet_ref": "cirad",
+      "images": []
+    },
+    {
+      "titre": "MyAvatar — Gestion de données utilisateur et RGPD (Symfony/PostgreSQL)",
+      "contexte": "Projet de 3e année. Application de gestion d'avatars avec système d'authentification, gestion des profils et panneau d'administration. Base de données PostgreSQL, architecture Docker.",
+      "argumentation": "Ce projet valide l'AC2 (Confidentialité des données). J'ai développé un système de confidentialité permettant de rendre le profil utilisateur masquable et d'effectuer la suppression définitive des données utilisateur — droits fondamentaux du RGPD (droit à l'effacement, droit à la portabilité). La modélisation des entités avec Doctrine ORM, la sécurisation de l'authentification (hashage Symfony, rôles, protection des routes), et la gestion des commandes CLI pour l'administration des données illustrent une approche globale de la gestion sécurisée des données personnelles.",
+      "ac_lies": ["AC2"],
+      "projet_ref": "myAvatar",
+      "images": [
+        { "src": "/assets/projects/myAvatar/gallery/myAvatarHome.png", "alt": "MyAvatar - Page d'accueil" },
+        { "src": "/assets/projects/myAvatar/gallery/myAvatarCoverage.png", "alt": "MyAvatar - Couverture de tests" }
+      ]
+    }
+  ]
+}

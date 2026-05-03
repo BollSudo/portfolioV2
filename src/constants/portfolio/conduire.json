@@ -1,0 +1,108 @@
+{
+  "id": "conduire",
+  "titre": "Conduire un projet",
+  "description": "La compétence Conduire consiste à identifier les besoins des clients et utilisateurs, à formaliser des cahiers des charges, à appliquer des méthodes de gestion de projet et à communiquer efficacement avec les parties prenantes. Elle implique la maîtrise des cycles de développement (Waterfall, AGILE SCRUM) et la capacité à suivre et à coordonner un projet dans sa globalité.",
+  "niveau": {
+    "numero": 2,
+    "objectif": "Appliquer une démarche de suivi de projet en fonction des besoins métiers des clients et des utilisateurs"
+  },
+  "ac": [
+    {
+      "id": "AC1",
+      "titre": "Identifier les processus présents dans une organisation en vue d'améliorer les systèmes d'information"
+    },
+    {
+      "id": "AC2",
+      "titre": "Formaliser les besoins du client et de l'utilisateur"
+    },
+    {
+      "id": "AC3",
+      "titre": "Identifier les critères de faisabilité d'un projet informatique"
+    },
+    {
+      "id": "AC4",
+      "titre": "Définir et mettre en œuvre une démarche de suivi de projet"
+    }
+  ],
+  "ce": [
+    "En communiquant efficacement avec les différents acteurs d'un projet",
+    "En respectant les règles juridiques et les normes en vigueur",
+    "En sensibilisant à une gestion éthique, responsable, durable et interculturelle",
+    "En adoptant une démarche proactive, créative et critique"
+  ],
+  "niveaux_precedents": [
+    {
+      "numero": 1,
+      "objectif": "Identifier les besoins métiers des clients et des utilisateurs",
+      "ac": [
+        {
+          "id": "AC1",
+          "titre": "Appréhender les besoins du client et de l'utilisateur"
+        },
+        {
+          "id": "AC2",
+          "titre": "Mettre en place les outils de gestion de projet"
+        },
+        {
+          "id": "AC3",
+          "titre": "Identifier les acteurs et les différentes phases d'un cycle de développement"
+        }
+      ],
+      "preuves": [
+        {
+          "titre": "Site Web Escape Game — Projet interdisciplinaire (Canva, Git)",
+          "contexte": "Projet interdisciplinaire de première année réalisé en groupe de cinq. Développement d'un site web vitrine et d'une affiche promotionnelle pour un escape game fictif ('The Killer's Run'), en collaboration avec un client.",
+          "argumentation": "Ce projet valide l'AC1 (Appréhender les besoins du client). Des échanges oraux et écrits réguliers avec le client ont permis de recueillir ses attentes esthétiques et fonctionnelles, de valider les maquettes, et d'ajuster les livrables au fil de l'avancement. L'utilisation de Canva pour la partie visuelle et de Git pour le versioning collaboratif illustre la mise en place d'outils de gestion de projet (AC2). La répartition claire des rôles, la coordination efficace et le respect des délais témoignent d'une organisation rigoureuse.",
+          "ac_lies": ["AC1", "AC2", "AC3"],
+          "images": []
+        },
+        {
+          "titre": "Podcast 'Controverses numériques' et site web Wishipedia",
+          "contexte": "Projet interdisciplinaire de première année. Réalisation d'un podcast scénarisé sur les enjeux environnementaux du numérique (fabrication et usage des téléphones portables) et d'un site web vitrine responsif sur la même thématique.",
+          "argumentation": "Ce projet valide les AC1 et AC3. J'ai contribué à la rédaction du script, à l'enregistrement et au montage audio (Audacity). La recherche documentaire rigoureuse, gérée avec Zotero pour la bibliographie, illustre une démarche critique et éthique (enjeux environnementaux, sourçage des informations). Le site web responsif Wishipedia démontre la capacité à identifier les différentes phases d'un cycle de développement et à adapter un livrable aux besoins du sujet.",
+          "ac_lies": ["AC1", "AC3"],
+          "images": []
+        },
+        {
+          "titre": "FestiPop — Planification complète d'un festival (Pert, Gantt, Comptabilité)",
+          "contexte": "Projet de première année. Planification complète d'un festival de Pop Culture organisé par une entreprise fictive (Minute Festival), incluant budgétisation, inventaire, logistique et outils informatiques.",
+          "argumentation": "Ce projet valide principalement l'AC2 (Mettre en place les outils de gestion de projet). J'ai rédigé un cahier des charges détaillant toutes les étapes du projet (conception, budgétisation, inventaire, logistique, matériel informatique, tarification, recrutement). J'ai utilisé le diagramme de Pert pour ordonnancer les tâches, le diagramme de Gantt pour planifier les délais, et Google Sheets pour le suivi comptable (charges, immobilisations, amortissements, TVA). Cette expérience m'a permis de comprendre la structure d'un projet de A à Z et l'importance d'une analyse préalable rigoureuse.",
+          "ac_lies": ["AC2", "AC3"],
+          "images": []
+        }
+      ]
+    }
+  ],
+  "preuves": [
+    {
+      "titre": "StudAdvisor — SCRUM Master (Méthode AGILE SCRUM)",
+      "contexte": "Projet tuteuré du semestre 3, réalisé en équipe de cinq sur quatre mois. J'ai occupé le rôle de SCRUM Master pendant les deux premiers sprints (environ cinq semaines), dans le cadre d'une démarche de développement AGILE SCRUM.",
+      "argumentation": "Ce projet valide l'AC4 (Définir et mettre en œuvre une démarche de suivi de projet). En tant que SCRUM Master, j'ai organisé et animé tous les rituels AGILE : stand-up meetings réguliers, planning poker, réunions d'affinage du backlog, revues de sprint et rétrospectives. J'ai produit des bilans de sprint et des tableaux de bord (graphiques de vélocité, tableaux d'activités de sprint) pour assurer un suivi continu. J'ai également communiqué avec le Product Owner (responsable d'études) pour évaluer la valeur client des User Stories et présenter les fonctionnalités lors des sprint reviews. Cette expérience m'a permis de passer d'une approche Waterfall (cahier des charges complet en amont) à une méthode itérative et incrémentale avec feedback client rapide.",
+      "ac_lies": ["AC1", "AC2", "AC4"],
+      "projet_ref": "studAdvisor",
+      "images": [
+        { "src": "/assets/projects/studAdvisor/gallery/agreg.png", "alt": "StudAdvisor - Agrégation des notes" },
+        { "src": "/assets/projects/studAdvisor/gallery/login.png", "alt": "StudAdvisor - Connexion" }
+      ]
+    },
+    {
+      "titre": "Race against the Fly — Collaboration pluridisciplinaire (Stage CIRAD)",
+      "contexte": "Stage de deuxième année au CIRAD. Collaboration au sein d'une équipe pluridisciplinaire (chercheurs en agronomie, biologistes, informaticien) pour développer une application Python soutenant un jeu sérieux hybride.",
+      "argumentation": "Ce projet valide les AC1, AC2 et AC4. Pour l'AC1 (Identifier les processus dans une organisation), j'ai analysé les processus de collecte et d'exploitation des données de jeu existants (script R manuel) pour concevoir une solution informatique répondant aux besoins réels de l'organisation de recherche. Pour l'AC2 (Formaliser les besoins), j'ai extrait les besoins utilisateurs des chercheurs (animateurs de terrain non-informaticiens) pour concevoir des solutions ergonomiques adaptées. Des validations hebdomadaires avec l'équipe illustrent le suivi continu du projet (AC4). En tant que seul informaticien, j'ai dû concilier les contraintes non fonctionnelles (multiplateforme, localisation), les besoins des chercheurs et les impératifs de qualité logicielle.",
+      "ac_lies": ["AC1", "AC2", "AC4"],
+      "projet_ref": "cirad",
+      "images": []
+    },
+    {
+      "titre": "Very Bad Split — Faisabilité et priorisation des évolutions (PHP/Symfony)",
+      "contexte": "Projet de semestre 4. L'équipe devait auditer une application existante, puis décider des évolutions à apporter en tenant compte de la faisabilité technique et des priorités fonctionnelles.",
+      "argumentation": "Ce projet valide l'AC3 (Identifier les critères de faisabilité d'un projet informatique). L'audit préalable de l'application (identification des failles, analyse de la normalisation, cartographie des fonctionnalités existantes) a permis d'évaluer la faisabilité de chaque évolution envisagée : coût de correction des failles de sécurité, effort de refactorisation vers Symfony, complexité de la normalisation en 3NF. Ces critères ont guidé la priorisation des tâches et la répartition du travail au sein de l'équipe de trois développeurs.",
+      "ac_lies": ["AC3"],
+      "projet_ref": "veryBadSplit",
+      "images": [
+        { "src": "/assets/projects/veryBadSplit/gallery/pageEventTri.png", "alt": "Very Bad Split - Page événement" },
+        { "src": "/assets/projects/veryBadSplit/gallery/routesTri.png", "alt": "Very Bad Split - Routes Symfony" }
+      ]
+    }
+  ]
+}

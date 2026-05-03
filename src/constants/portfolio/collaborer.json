@@ -1,0 +1,218 @@
+{
+  "id": "collaborer",
+  "titre": "Collaborer",
+  "description": "",
+  "niveau": {
+    "numero": 3,
+    "objectif": "Manager une équipe informatique"
+  },
+  "ac": [
+    {
+      "id": "AC1",
+      "titre": "Organiser et partager une veille numérique"
+    },
+    {
+      "id": "AC2",
+      "titre": "Identifier les enjeux de l'économie de l'innovation numérique"
+    },
+    {
+      "id": "AC3",
+      "titre": "Guider la conduite du changement informatique au sein d'une organisation"
+    },
+    {
+      "id": "AC4",
+      "titre": "Accompagner le management de projet informatique"
+    }
+  ],
+  "ce": [
+    "En inscrivant sa démarche au sein d'une équipe pluridisciplinaire",
+    "En accompagnant la mise en oeuvre des évolutions informatiques",
+    "En veillant au respect des contraintes juridiques",
+    "En développant une communication efficace et collaborative"
+  ],
+  "niveaux_precedents": [
+    {
+      "numero": 1,
+      "objectif": "Identifier ses aptitudes pour travailler dans une équipe informatique",
+      "ac": [
+        { "id": "AC1", "titre": "Appréhender l'écosystème numérique" },
+        { "id": "AC2", "titre": "Découvrir les aptitudes requises selon les différents secteurs informatiques" },
+        { "id": "AC3", "titre": "Identifier les statuts, les fonctions et les rôles de chaque membre d'une équipe pluridisciplinaire" },
+        { "id": "AC4", "titre": "Acquérir les compétences interpersonnelles pour travailler en équipe" }
+      ],
+      "ce": [
+        "En inscrivant sa démarche au sein d'une équipe pluridisciplinaire",
+        "En accompagnant la mise en oeuvre des évolutions informatiques",
+        "En veillant au respect des contraintes juridiques",
+        "En développant une communication efficace et collaborative"
+      ],
+      "preuves": [
+        {
+          "titre": "SAE Linux (1.03) — Découverte de l'écosystème numérique et dimension anglophone",
+          "contexte": "Dans le cadre de la SAE Linux de première année, complétée par les TD d'anglais, j'ai installé et configuré une distribution Linux (Ubuntu) en dual-boot et en VM (VirtualBox), et développé le vocabulaire technique anglophone nécessaire pour travailler dans un environnement numérique professionnel.",
+          "argumentation": "Cette expérience valide l'AC1 (Appréhender l'écosystème numérique) : l'installation de Linux m'a exposé à l'ensemble de l'écosystème numérique — systèmes d'exploitation, environnements de développement (JDK, VSCode), gestion de fichiers et permissions, outils réseau — dans un contexte concret. Les TD d'anglais complètent cette appréhension (AC4 — acquérir les compétences interpersonnelles) : maîtriser le vocabulaire technique anglophone (commandes bash, documentation, outils open source) est une compétence fondamentale pour travailler efficacement dans une équipe informatique, notamment dans des contextes internationaux.",
+          "ac_lies": ["AC1", "AC4"],
+          "projet_ref": null,
+          "images": []
+        },
+        {
+          "titre": "SAE BD (1.04) — Analyse économique de l'informatisation des données",
+          "contexte": "Projet interdisciplinaire de première année, réalisé en groupe de cinq. En parallèle du travail technique sur la base de données Oracle, une analyse économique a été menée autour d'une entreprise fictive associée à notre BD, en la comparant à une entreprise réelle similaire.",
+          "argumentation": "Ce projet valide l'AC1 (Appréhender l'écosystème numérique) dans sa dimension économique et organisationnelle : j'ai analysé l'importance des bases de données pour une organisation — coûts de mise en place, de maintenance et d'exploitation (licences, matériel, main-d'œuvre) — ainsi que leurs conséquences internes (centralisation et efficacité de l'information) et externes (valorisation commerciale des données collectées). Cette compréhension des enjeux économiques du numérique est fondamentale pour appréhender le rôle de l'informaticien dans une organisation et justifier des choix techniques vis-à-vis des parties prenantes.",
+          "ac_lies": ["AC1"],
+          "projet_ref": null,
+          "images": []
+        },
+        {
+          "titre": "SAE Escape Game (1.05) — Travail en équipe pluridisciplinaire avec répartition des rôles",
+          "contexte": "Projet interdisciplinaire de première année, réalisé en groupe de cinq. Création d'un site web vitrine et d'une affiche promotionnelle pour un Escape Game ('The Killer's Run'). Le travail en groupe impliquait une coordination entre membres, une attribution des rôles/tâches et une planification du travail.",
+          "argumentation": "Ce projet valide l'AC3 (Identifier les statuts, les fonctions et les rôles de chaque membre d'une équipe pluridisciplinaire) : la répartition explicite des rôles (communication client, intégration web, design visuel) et la coordination entre membres constituent ma première expérience formelle de travail en équipe avec des fonctions différenciées. L'AC4 (Acquérir les compétences interpersonnelles pour travailler en équipe) est validé par les échanges oraux et écrits avec la clientèle pour recueillir les besoins, valider les maquettes et ajuster les livrables, ainsi que par l'utilisation de Git pour le versioning collaboratif — première expérience concrète de travail en équipe sur un projet informatique.",
+          "ac_lies": ["AC3", "AC4"],
+          "projet_ref": null,
+          "images": []
+        },
+        {
+          "titre": "SAE Controverse (1.06) — Analyse PESTEL et podcast sociotechnique",
+          "contexte": "Projet interdisciplinaire de 1ère année réalisé en trinôme. Autour de la controverse 'les techs et gadgets actuels nuisent-ils à l'environnement ?', le projet comprenait un site web responsive multi-pages, une analyse PESTEL de Microsoft et un podcast scripté enregistré sur Audacity, avec bibliographie gérée via Zotero.",
+          "argumentation": "Ce projet valide l'AC1 (Appréhender l'écosystème numérique) via l'analyse PESTEL de Microsoft : j'ai étudié les acteurs externes et leurs impacts sur la stratégie de l'entreprise face aux innovations technologiques et au développement durable, développant une vision systémique de l'écosystème numérique. L'AC4 (Acquérir les compétences interpersonnelles) est illustré par la production du podcast : répartition des rôles dans l'équipe (micro-trottoir, script, édition, enregistrement), recherche documentaire approfondie étayée par des sources rigoureuses (Zotero), et argumentation structurée pour défendre des positions face à un enjeu sociétal complexe. Ces activités développent les aptitudes de communication, de rigueur et de travail collaboratif indispensables en équipe informatique.",
+          "ac_lies": ["AC1", "AC4"],
+          "projet_ref": null,
+          "images": []
+        },
+        {
+          "titre": "SAE Festival (2.05) — Organisation d'un événement en équipe avec outils de gestion de projet",
+          "contexte": "Projet de 1ère année (S2) réalisé en équipe. Réalisation d'un cahier des charges complet pour l'organisation d'un festival de Pop Culture (FestiPop) par l'entreprise fictive Minute Festival : conception, planification, budgétisation, inventaire, tarification, recrutement et choix des matériels informatiques nécessaires.",
+          "argumentation": "Ce projet valide l'AC3 (Identifier les statuts, les fonctions et les rôles de chaque membre d'une équipe pluridisciplinaire) : l'organisation du festival a nécessité une répartition précise des responsabilités entre membres de l'équipe (planification, comptabilité, logistique, informatique) et la coordination entre ces fonctions pour produire un cahier des charges cohérent. L'AC4 (Acquérir les compétences interpersonnelles) est illustré par l'utilisation d'outils de planification collaboratifs (diagrammes PERT et Gantt) et de comptabilité partagée (Google Sheets), démontrant la capacité à travailler en équipe de manière structurée et à mobiliser des outils adaptés à la gestion de projet.",
+          "ac_lies": ["AC3", "AC4"],
+          "projet_ref": null,
+          "images": []
+        }
+      ]
+    },
+    {
+      "numero": 2,
+      "objectif": "Situer son rôle et ses missions au sein d'une équipe informatique",
+      "ac": [
+        { "id": "AC1", "titre": "Comprendre la diversité, la situation de handicap et les problèmes de communication dans une équipe" },
+        { "id": "AC2", "titre": "Appliquer une démarche pour intégrer une équipe informatique au sein d'une organisation" },
+        { "id": "AC3", "titre": "Mobiliser les compétences interpersonnelles adaptées à la situation" }
+      ],
+      "ce": [
+        "En inscrivant sa démarche au sein d'une équipe pluridisciplinaire",
+        "En accompagnant la mise en oeuvre des évolutions informatiques",
+        "En veillant au respect des contraintes juridiques",
+        "En développant une communication efficace et collaborative"
+      ],
+      "preuves": [
+        {
+          "titre": "StudAdvisor — Intégration comme SCRUM Master dans une équipe de cinq",
+          "contexte": "Projet tuteuré semestre 3, en équipe de cinq étudiants. J'ai occupé le rôle de SCRUM Master pendant les deux premiers sprints.",
+          "argumentation": "Ce projet valide les AC2 et AC3. M'intégrer dans une organisation AGILE en tant que SCRUM Master a nécessité d'adopter une posture spécifique : faciliter sans décider, fluidifier la communication, résoudre les blocages de l'équipe. J'ai mobilisé des compétences interpersonnelles concrètes (AC3) : animation des rétrospectives avec la méthode du speedboat, gestion des tensions lors du planning poker, communication régulière avec le Product Owner. La diversité des profils dans l'équipe (différentes spécialités, niveaux d'expérience) a renforcé ma capacité à comprendre et intégrer ces différences (AC1).",
+          "ac_lies": ["AC1", "AC2", "AC3"],
+          "projet_ref": "studAdvisor",
+          "images": [
+            { "src": "/assets/projects/studAdvisor/gallery/agreg.png", "alt": "StudAdvisor - Agrégation des notes" },
+            { "src": "/assets/projects/studAdvisor/gallery/login.png", "alt": "StudAdvisor - Connexion" }
+          ]
+        },
+        {
+          "titre": "Race against the Fly — Intégration dans une organisation de recherche (Stage CIRAD)",
+          "contexte": "Stage de deuxième année au CIRAD. En tant que seul développeur au sein d'une équipe pluridisciplinaire de chercheurs en agronomie.",
+          "argumentation": "Ce projet valide l'AC2 (Intégrer une équipe dans une organisation). Rejoindre le CIRAD signifiait comprendre la culture et les processus d'une organisation de recherche publique, très différente d'un contexte purement informatique. J'ai dû m'adapter à des interlocuteurs non-techniques (biologistes, agronomes), communiquer mes décisions techniques de manière accessible, et aligner mon rythme de développement sur leurs contraintes scientifiques. Cette expérience m'a appris à mobiliser des compétences interpersonnelles adaptées (AC3) : écoute active, reformulation des besoins, synthèse des retours utilisateurs lors des validations hebdomadaires.",
+          "ac_lies": ["AC2", "AC3"],
+          "projet_ref": "cirad",
+          "images": []
+        },
+        {
+          "titre": "NDI 2024 — Travail d'équipe intensif sous contrainte (Symfony + Bootstrap)",
+          "contexte": "Nuit de l'Info 2024, équipe de six développeurs, développement d'un site web en 12 heures sur un thème révélé le soir même.",
+          "argumentation": "Ce projet valide l'AC3 (Mobiliser les compétences interpersonnelles adaptées à la situation). Le contexte de stress intense (nuit, délai fixe, sujet imposé) exige une communication rapide et efficace, une capacité à prendre des décisions collectives rapidement (choix des défis secondaires, direction artistique) et à gérer les désaccords sous pression. J'ai assuré la cohésion de l'équipe en gérant le gitflow et en répartissant les tâches selon les compétences de chacun, illustrant la capacité à se situer et à contribuer dans un collectif aux profils variés.",
+          "ac_lies": ["AC1", "AC3"],
+          "projet_ref": "ndi2024",
+          "images": [
+            { "src": "/assets/projects/ndi2024/gallery/ndi2024site.png", "alt": "NDI 2024 - Site web" }
+          ]
+        }
+      ]
+    }
+  ],
+  "preuves": [
+    {
+      "titre": "AzureSketch — Organisation SCRUM et Gitflow",
+      "contexte": "SAE de 3e année de BUT Informatique, réalisée en équipe de cinq développeurs sur cinq sprints SCRUM, avec un PO et un SM définis. Développement d'une application web de dessin sous contraintes, sous la supervision de deux encadrants.",
+      "argumentation": "Ce projet valide l'AC4 (Accompagner le management de projet informatique) à travers une organisation SCRUM rigoureuse et professionnelle. Cinq sprints ont été conduits avec des revues de sprint régulières présentées aux clients, permettant d'ajuster les priorités selon la valeur client. La gestion des tâches sur Trello, priorisées selon leur degré d'importance pour les clients, illustre la capacité à structurer le backlog et à piloter l'avancement. Un Gitflow strict a encadré le développement : branches feature basées sur dev, Merge Requests soumises à code review par au moins deux membres avant merge dans dev, et validation unanime de toute l'équipe requise pour merger dev dans main. Le suivi des bugs via le système d'issues GitLab et les conventions de nommage des commits (format <type>[portée]: <description>) complètent un cadre de management de projet directement transposable en contexte professionnel. J'ai contribué à ce cadre en prenant en charge le setup de la pipeline CI/CD, assurant un déploiement automatique en pré-production après chaque MR validée dans dev.",
+      "ac_lies": ["AC4"],
+      "projet_ref": null,
+      "images": [
+        { "src": "/assets/projects/azureSketch/gallery/ci-cd-variables.png", "alt": "AzureSketch - Variables CI/CD" },
+        { "src": "/assets/projects/azureSketch/gallery/conventions-commit.png", "alt": "AzureSketch - Conventions de commit" },
+        { "src": "/assets/projects/azureSketch/gallery/ExempleStory.png", "alt": "AzureSketch - Exemple User Story" },
+        { "src": "/assets/projects/azureSketch/gallery/MR.png", "alt": "AzureSketch - Merge Request avec code review" },
+        { "src": "/assets/projects/azureSketch/gallery/regles-branches.png", "alt": "AzureSketch - Règles des branches Gitflow" },
+        { "src": "/assets/projects/azureSketch/gallery/trello-sprint5.png", "alt": "AzureSketch - Trello sprint 5" }
+      ]
+    },
+    {
+      "titre": "Veille Informationnelle — Système de veille automatisé (n8n & flux RSS)",
+      "contexte": "Travail de veille informationnelle mené sur plusieurs mois dans le cadre du semestre 5 de BUT Informatique. Les thématiques abordées étaient les nouvelles technologies DevOps, l'impact de l'IA sur l'environnement, et les innovations dans le jeu vidéo.",
+      "argumentation": "Ce projet illustre directement l'AC1 (Organiser et partager une veille numérique). J'ai mis en place une infrastructure de veille automatisée via n8n (workflow de collecte) connectée à une vingtaine de flux RSS spécialisés. Un pré-traitement par IA permettait de filtrer les contenus pertinents par thématique, avant une sélection finale et la publication automatique sur un serveur Discord via un webhook et dans des fichiers JSON. Cette démarche combine des méthodes variées : automatisation (n8n, RSS), assistance IA pour le filtrage, et recherche manuelle sur des plateformes spécialisées. La validation humaine systématique des sources avant exploitation garantit la rigueur de la veille. La publication de posts sur un forum dédié sur des sujets tels que Kubernetes v1.35, l'IA environnementale ou Clair Obscur illustre la capacité à transformer l'information brute en contenu exploitable et partageable. La veille valide également l'AC2 (Identifier les enjeux de l'économie de l'innovation numérique). En couvrant trois domaines stratégiques de l'économie numérique : le DevOps, l'IA appliquée à l'énergie (études ADEME, MIT Energy Initiative, impact des datacenters IA) et le jeu vidéo (succès de Clair Obscur, NPC génératifs d'Ubisoft), j'ai pu développer une compréhension des tensions et des opportunités de l'innovation numérique. Ces sujets permettent d'identifier des tendances de marché, des enjeux de compétitivité et des questions éthiques (IA et environnement).",
+      "ac_lies": ["AC1", "AC2"],
+      "projet_ref": null,
+      "images": [
+        { "src": "/assets/projects/veille/gallery/capture-veille.png", "alt": "Veille" },
+        { "src": "/assets/projects/veille/gallery/forum.png", "alt": "Veille - Publication sur le forum" },
+        { "src": "/assets/projects/veille/gallery/n8n.png", "alt": "Veille - Workflow n8n" }
+      ]
+    },
+    {
+      "titre": "GoPetSit™",
+      "contexte": "Application de réservation de services pour animaux de compagnie, développée initialement en équipe de quatre (Symfony, MariaDB, Tailwind CSS). Suite à la première version (juillet 2025), le projet a été transmis à d'autres développeurs pour poursuivre son évolution et sa mise en production.",
+      "argumentation": "Ce projet illustre l'AC3 (Guider la conduite du changement informatique au sein d'une organisation). La transmission d'un projet à une nouvelle équipe de développeurs constitue un changement organisationnel informatique : il exige une documentation technique claire, un code bien structuré et maintenable, ainsi qu'un accompagnement des nouveaux développeurs pour comprendre les décisions d'architecture. Le fait que le projet soit aujourd'hui accessible en production (gopetsit.com) avec une interface enrichie par les nouveaux développeurs atteste du succès de cette conduite du changement. Côté développement, j'ai conçu le panel d'administration, l'UX de la page profil, le système de mailing (Symfony Mailer) et la gestion de créneaux via calendrier interactif — des fonctionnalités suffisamment documentées pour être reprises et étendues par d'autres.",
+      "ac_lies": ["AC3"],
+      "projet_ref": "gps",
+      "images": [
+        { "src": "/assets/projects/gps/gallery/pageProfile.png", "alt": "GoPetSit - Page profil" },
+        { "src": "/assets/projects/gps/gallery/admin.png", "alt": "GoPetSit - Panel admin" }
+      ]
+    },
+    {
+      "titre": "Race against the Fly (Stage)",
+      "contexte": "Stage au CIRAD (centre de recherche agronomique). Ma mission était de transformer un processus existant basé sur un script R en une application Python ergonomique, accessible à un public non-informaticien (chercheurs et animateurs de terrain).",
+      "argumentation": "Ce projet valide l'AC3 (Guider la conduite du changement informatique au sein d'une organisation). En tant que seul développeur au sein d'une équipe pluridisciplinaire (chercheurs en agronomie, biologistes), j'ai guidé la transformation d'un outil de recherche : un script R difficile d'accès vers une application Python ergonomique déployable sur les trois principaux systèmes d'exploitation. Cette transformation constituait un changement informatique au sens plein : adoption d'un nouvel outil par des utilisateurs non-techniques, formation implicite via une interface intuitive (Tkinter), localisation multilingue pour toucher un public africain anglophone et francophone. Les validations hebdomadaires avec l'équipe du CIRAD illustrent la démarche itérative et collaborative du projet.",
+      "ac_lies": ["AC3"],
+      "projet_ref": "cirad",
+      "images": []
+    },
+    {
+      "titre": "NDI 2025 — Capitaine d'équipe",
+      "contexte": "Nuit de l'Info 2025. En tant que capitaine de l'équipe 'Bureau des savoirs magiques' (6 développeurs), j'ai assuré la coordination technique et organisationnelle de l'équipe pendant 12 heures de développement intensif.",
+      "argumentation": "Ce projet illustre l'AC4 (Accompagner le management de projet informatique). En tant que capitaine, j'ai pris en charge la gestion du gitflow (définition des branches, revues de PR), la dockerisation du projet (dev et prod), le déploiement et l'hébergement du site. Ces responsabilités m'ont permis de démontrer des compétences de management : répartition des tâches entre développeurs, décisions collectives sur les défis secondaires, et gestion du temps. La livraison d'un site fonctionnel et déployé en production au terme d'une nuit de travail atteste de l'efficacité de cette organisation.",
+      "ac_lies": ["AC4"],
+      "projet_ref": "ndi2025",
+      "images": [
+        { "src": "/assets/projects/ndi2025/gallery/ndi2025Intro.png", "alt": "NDI 2025 - Site web" }
+      ]
+    },
+    {
+      "titre": "StudAdvisor — Rôle de SCRUM Master",
+      "contexte": "Projet du semestre 3 de BUT Informatique, réalisé en équipe de cinq. J'ai occupé le rôle de SCRUM Master pendant les deux premiers sprints du projet (environ cinq semaines).",
+      "argumentation": "Ce projet valide l'AC4 (Accompagner le management de projet informatique) à travers l'exercice du rôle de SCRUM Master dans une équipe de cinq développeurs. Concrètement, j'ai organisé et animé les rituels AGILE SCRUM : stand-up meetings réguliers, planning poker, réunions d'affinage, revues et rétrospectives de sprint. J'ai produit des bilans de sprint et des tableaux de bord pour assurer un suivi continu et organisé. La communication régulière avec le Product Owner (responsable d'études) pour évaluer la valeur client des User Stories et présenter les fonctionnalités développées lors des sprint reviews illustre la capacité à accompagner un projet en intégrant les retours des parties prenantes.",
+      "ac_lies": ["AC4"],
+      "projet_ref": "studAdvisor",
+      "images": [
+        { "src": "/assets/projects/studAdvisor/gallery/agreg.png", "alt": "StudAdvisor - Agrégation des notes" },
+        { "src": "/assets/projects/studAdvisor/gallery/datasprint.png", "alt": "StudAdvisor - Bilan de sprint" },
+        { "src": "/assets/projects/studAdvisor/gallery/speedboat.png", "alt": "StudAdvisor - Rétrospective speedboat" },
+        { "src": "/assets/projects/studAdvisor/gallery/velocite.png", "alt": "StudAdvisor - Vélocité de l'équipe" }
+      ]
+    },
+    {
+      "titre": "Code Game Jam 2026 — Équipe pluridisciplinaire (Godot)",
+      "contexte": "Game jam de 3 jours (10e édition), en équipe pluridisciplinaire composée de développeurs, graphistes et un musicien. Développement du jeu 'Very Bad Click' sur le thème 'Fête des Clics'.",
+      "argumentation": "Ce projet valide l'AC4 (Accompagner le management de projet informatique) dans un contexte de forte contrainte temporelle (3 jours) et d'équipe pluridisciplinaire. J'ai participé au brainstorming initial pour définir le concept du jeu, à la planification des tâches techniques, et au développement intensif. La coordination entre développeurs, graphistes et musicien exige une communication claire sur les interfaces (format des assets, structure des events pour déclencher les animations, etc.) et une organisation rigoureuse pour intégrer les contributions de chacun en temps contraint. Cette expérience illustre la capacité à travailler et à accompagner un projet dans un environnement créatif et pluridisciplinaire.",
+      "ac_lies": ["AC4"],
+      "projet_ref": null,
+      "images": []
+    }
+  ]
+}

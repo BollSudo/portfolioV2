@@ -1,0 +1,210 @@
+{
+  "id": "optimiser",
+  "titre": "Optimiser",
+  "description": "",
+  "niveau": {
+    "numero": 3,
+    "objectif": "Analyser et optimiser des applications"
+  },
+  "ac": [
+    {
+      "id": "AC1",
+      "titre": "Anticiper les résultats de diverses métriques (temps d'exécution, occupation mémoire…)"
+    },
+    {
+      "id": "AC2",
+      "titre": "Profiler, analyser et justifier le comportement d'un code existant"
+    },
+    {
+      "id": "AC3",
+      "titre": "Choisir et utiliser des bibliothèques et méthodes dédiées au domaine d'application (imagerie, immersion, intelligence artificielle, jeux vidéo, parallélisme, calcul formel…)"
+    }
+  ],
+  "ce": [
+    "En formalisant et modélisant des situations complexes",
+    "En recensant les algorithmes et les structures de données usuels",
+    "En s'appuyant sur des schémas de raisonnement",
+    "En justifiant les choix et validant les résultats"
+  ],
+  "niveaux_precedents": [
+    {
+      "numero": 1,
+      "objectif": "Appréhender et construire des algorithmes",
+      "ac": [
+        { "id": "AC1", "titre": "Analyser un problème avec méthode" },
+        { "id": "AC2", "titre": "Comparer des algorithmes pour des problèmes classiques" },
+        { "id": "AC3", "titre": "Formaliser et mettre en œuvre des outils mathématiques pour l'informatique" }
+      ],
+      "ce": [
+        "En formalisant et modélisant des situations complexes",
+        "En recensant les algorithmes et les structures de données usuels",
+        "En s'appuyant sur des schémas de raisonnement",
+        "En justifiant les choix et validant les résultats"
+      ],
+      "preuves": [
+        {
+          "titre": "Trains — Algorithmes de graphes (Java / JUnit)",
+          "contexte": "Projet de première année de BUT Informatique. Implémentation des algorithmes de graphes appliqués au plateau du jeu Trains© : Dijkstra, coloration gloutonne, k-cliques, classes de connexité, détection d'isthmes/cycles, identification du type de graphe.",
+          "argumentation": "Ce projet est la première expérience significative de la compétence Optimiser. J'ai dû analyser méthodiquement le problème en formalisant le plateau de jeu comme un graphe planaire pondéré non-orienté (AC1), décomposer chaque algorithme en sous-problèmes avant implémentation. La comparaison implicite entre les algorithmes (Dijkstra vs recherche exhaustive pour les k-cliques, par exemple) illustre une première approche comparative (AC2). L'utilisation de Comparators, Iterators et Collections Java illustre la capacité à formaliser et recenser les structures de données usuelles (AC3). La validation systématique des résultats via TDD avec JUnit ancre la démarche dans la rigueur scientifique.",
+          "ac_lies": ["AC1", "AC2", "AC3"],
+          "projet_ref": "trains",
+          "images": [
+            { "src": "/assets/projects/trains/gallery/trainsIHM.png", "alt": "Trains - Interface principale" },
+            { "src": "/assets/projects/trains/gallery/coloGloutonne.png", "alt": "Trains - Coloration gloutonne" }
+          ]
+        },
+        {
+          "titre": "SAE E3Cete (1.02) — Comparaison d'algorithmes de tri et analyse probabiliste (Java)",
+          "contexte": "SAE de 1ère année de BUT Informatique. En complément du développement du jeu de SET, ce projet incluait une analyse expérimentale et théorique de trois algorithmes de tri de complexité quadratique O(n²) — tri par sélection, tri par propagation (bulles) et tri par insertion — ainsi qu'une étude probabiliste sur les événements du jeu (piocher 9 cartes).",
+          "argumentation": "Ce projet est la trace la plus directe de la compétence Optimiser niveau 1 issue du S1. Pour l'AC2 (Comparer des algorithmes pour des problèmes classiques), j'ai conçu un protocole de test rigoureux, implémenté des fonctions de mesure du temps d'exécution et du nombre d'opérations élémentaires, stocké les données dans des fichiers .csv et produit des graphes comparatifs via Regressi incluant incertitudes et analyse de tendances. Pour l'AC3 (Formaliser et mettre en œuvre des outils mathématiques), j'ai représenté formellement un tableau comme arrangement ou combinaison selon la présence d'une relation d'ordre, et calculé des probabilités expérimentales en confrontant fréquences observées aux probabilités théoriques (taux d'erreur en fonction du nombre d'essais). L'AC1 (Analyser un problème avec méthode) est illustré par la rédaction préalable d'un protocole avant toute implémentation.",
+          "ac_lies": ["AC1", "AC2", "AC3"],
+          "projet_ref": null,
+          "images": []
+        },
+        {
+          "titre": "SAE Sudoku (1.01) — Analyse et optimisation algorithmique (Java)",
+          "contexte": "SAE de 1ère année de BUT Informatique, réalisée en binôme. Au-delà de l'implémentation de base, le projet comprenait des extensions visant à améliorer et optimiser le code : amélioration de l'IA de résolution, détection de triche et génération de grilles niveau facile.",
+          "argumentation": "Ce projet valide l'AC1 (Analyser un problème avec méthode) : concevoir une IA pour Sudoku nécessite d'analyser méthodiquement les contraintes du problème (lignes, colonnes, régions 3x3) et de les formaliser en conditions algorithmiques. L'optimisation du code pour les extensions — parcours partiels efficaces via backtracking, conditions d'arrêt précoce — constitue la première application d'une démarche analytique structurée à un problème de satisfaction de contraintes. La progression entre la version de base et les extensions illustre une réflexion itérative sur l'efficacité des algorithmes.",
+          "ac_lies": ["AC1"],
+          "projet_ref": null,
+          "images": []
+        }
+      ]
+    },
+    {
+      "numero": 2,
+      "objectif": "Sélectionner les algorithmes adéquats pour répondre à un problème donné",
+      "ac": [
+        { "id": "AC1", "titre": "Choisir des structures de données complexes adaptées au problème" },
+        { "id": "AC2", "titre": "Utiliser des techniques algorithmiques adaptées pour des problèmes complexes" },
+        { "id": "AC3", "titre": "Comprendre les enjeux et moyens de sécurisation des données et du code" },
+        { "id": "AC4", "titre": "Évaluer l'impact environnemental et sociétal des solutions proposées" }
+      ],
+      "ce": [
+        "En formalisant et modélisant des situations complexes",
+        "En recensant les algorithmes et les structures de données usuels",
+        "En s'appuyant sur des schémas de raisonnement",
+        "En justifiant les choix et validant les résultats"
+      ],
+      "preuves": [
+        {
+          "titre": "StudAdvisor — Patterns de conception et optimisation des requêtes (PHP)",
+          "contexte": "Projet tuteuré semestre 3. Développement d'une plateforme MVC sans framework avec des contraintes fortes sur la qualité du code et l'optimisation des accès aux données.",
+          "argumentation": "Ce projet valide l'AC1 et l'AC2 : le choix des structures de données (objets métier, collections PHP) et l'application de design patterns (Singleton pour la connexion BD, Stratégie pour les agrégations, Composite pour les formulaires) illustrent la sélection de techniques algorithmiques adaptées aux problèmes métier. Les requêtes SQL préparées (AC3) protègent contre les injections SQL tout en optimisant les accès. La gestion des données sensibles (LDAP, données anonymisées) dans le respect du RGPD illustre la prise en compte des enjeux sociétaux (AC4).",
+          "ac_lies": ["AC1", "AC2", "AC3", "AC4"],
+          "projet_ref": "studAdvisor",
+          "images": [
+            { "src": "/assets/projects/studAdvisor/gallery/agreg.png", "alt": "StudAdvisor - Agrégation des notes" },
+            { "src": "/assets/projects/studAdvisor/gallery/login.png", "alt": "StudAdvisor - Connexion" }
+          ]
+        },
+        {
+          "titre": "Very Bad Split — Normalisation 3NF et sécurisation (PHP/Symfony)",
+          "contexte": "Projet semestre 4. Audit, normalisation de la base de données et corrections de sécurité d'une application web existante.",
+          "argumentation": "Ce projet valide les AC1, AC2 et AC3. La normalisation en 3NF via le théorème de Casey-Delobel illustre l'application d'une technique algorithmique formelle (dépendances fonctionnelles, fermetures transitives) pour résoudre un problème complexe de cohérence de données (AC2). Le choix d'une structure relationnelle normalisée est la structure de données adaptée au problème (AC1). L'identification et la correction des failles (injections SQL, XSS, CSRF, hachage non sécurisé) démontrent une maîtrise des enjeux de sécurisation (AC3).",
+          "ac_lies": ["AC1", "AC2", "AC3"],
+          "projet_ref": "veryBadSplit",
+          "images": [
+            { "src": "/assets/projects/veryBadSplit/gallery/structTri.png", "alt": "Very Bad Split - Structure BD" },
+            { "src": "/assets/projects/veryBadSplit/gallery/routeTri.png", "alt": "Very Bad Split - Routes Symfony" }
+          ]
+        },
+        {
+          "titre": "Audit Écoconception — Impact environnemental du numérique (RGESN)",
+          "contexte": "Travail académique en binôme : audit RGESN de l'hébergement de data.gouv.fr chez OVH.",
+          "argumentation": "Ce travail valide l'AC4 (Évaluer l'impact environnemental et sociétal des solutions proposées). En appliquant le référentiel RGESN à un service numérique réel, j'ai évalué les indicateurs environnementaux clés (PUE, WUE, CUE, émissions GES, consommation eau/énergie) et la politique de durabilité d'OVH. Cette démarche d'audit, basée sur des standards normatifs (ISO 30134, SBTi), m'a appris à intégrer les critères environnementaux dans l'évaluation d'une solution technique — compétence de plus en plus incontournable dans le choix des architectures logicielles.",
+          "ac_lies": ["AC4"],
+          "projet_ref": null,
+          "images": []
+        }
+      ]
+    }
+  ],
+  "preuves": [
+    {
+      "titre": "Trains — Numérisation d'un jeu de plateau en Java (Algorithmes de graphes)",
+      "contexte": "Projet de première année de BUT Informatique, réalisé en binôme sur trois mois. L'objectif était de numériser le jeu de plateau Trains© sous la forme d'une application standalone Java, en explorant les algorithmes de graphes et en développant une IHM ergonomique avec JavaFX.",
+      "argumentation": "Ce projet illustre les AC1 et AC3. Pour l'AC1 (Anticiper les résultats de diverses métriques), j'ai implémenté plusieurs algorithmes de graphes (Dijkstra, coloration gloutonne, recherche de k-cliques, classes de connexité, détection d'isthmes et cycles). L'utilisation du TDD (Test-Driven Development) avec JUnit a permis de valider et d'anticiper le comportement de chaque algorithme. Pour l'AC3 (Choisir des bibliothèques dédiées), j'ai utilisé JavaFX avec ses mécanismes de Binding (unidirectionnel, bidirectionnel, bas et haut niveau) pour créer une IHM réactive. L'utilisation des classes Java comme les Comparators, Iterators et Collections Java a permis d'optimiser le code. Le packaging de l'application Windows avec JPackage et WiX démontre une maîtrise des outils de distribution. La séparation des responsabilités (contrôleurs, fichiers FXML, CSS) illustre une architecture propre et justifiée.",
+      "ac_lies": ["AC1", "AC3"],
+      "projet_ref": "trains",
+      "images": [
+        { "src": "/assets/projects/trains/gallery/trainsIHM.png", "alt": "Trains - Interface principale" },
+        { "src": "/assets/projects/trains/gallery/coloGloutonne.png", "alt": "Trains - Coloration gloutonne" }
+      ]
+    },
+    {
+      "titre": "Race against the Fly — Packaging multiplateforme Python (Stage CIRAD)",
+      "contexte": "Stage de deuxième année au CIRAD. La mission incluait la refactorisation d'un modèle scientifique R en Python, la création d'un pipeline CI/CD et le packaging de l'application sous forme d'exécutable multiplateforme.",
+      "argumentation": "Ce projet valide l'AC1 (Anticiper les résultats de diverses métriques) à travers le choix de Nuitka pour la compilation Python en code natif : cette décision était motivée par une analyse comparative des outils de packaging (PyInstaller, cx_Freeze, Nuitka) en termes de temps d'exécution, de taille de l'exécutable et de compatibilité multiplateforme. La compilation avec Nuitka offre des performances optimales car elle compile le code Python en C, puis en exécutable natif. Pour l'AC2 (Profiler et analyser un code existant), j'ai analysé en profondeur le script R existant pour en extraire la logique métier et les algorithmes du modèle scientifique, avant de les refactoriser en Python orienté objet. Cette analyse préalable, matérialisée par un diagramme UML d'état transition, a permis de justifier les choix d'architecture lors de la refactorisation.",
+      "ac_lies": ["AC1", "AC2"],
+      "projet_ref": "cirad",
+      "images": [
+        { "src": "/assets/projects/cirad/gallery/nuitka.png", "alt": "CIRAD - Nuitka compilation Python" },
+        { "src": "/assets/projects/cirad/gallery/UML-etat-transition-jeu-refactored.png", "alt": "CIRAD - UML états-transitions refactorisé" },
+        { "src": "/assets/projects/cirad/gallery/UML-etat-transition-jeu.png", "alt": "CIRAD - UML états-transitions original" }
+      ]
+    },
+    {
+      "titre": "Very Bad Split — Audit de sécurité et normalisation BD (Symfony)",
+      "contexte": "Projet de semestre 4 du BUT Informatique. La mission consistait à réaliser un audit complet d'une application web existante, à en corriger les failles de sécurité, à normaliser la base de données et à améliorer les fonctionnalités.",
+      "argumentation": "Ce projet illustre principalement l'AC2 (Profiler, analyser et justifier le comportement d'un code existant). J'ai réalisé un audit de sécurité complet de l'application, documentant pour chaque vulnérabilité (injections SQL, XSS, CSRF, hachage non sécurisé, etc.) un scénario d'exploitation et une évaluation du niveau de risque. Pour la normalisation de la base de données, j'ai analysé les dépendances fonctionnelles à partir des règles de gestion, décomposé la relation en 3NF via le théorème de Casey-Delobel, puis vérifié l'absence de perte de dépendances par comparaison des fermetures transitives.",
+      "ac_lies": ["AC2"],
+      "projet_ref": "veryBadSplit",
+      "images": [
+        { "src": "/assets/projects/veryBadSplit/gallery/structTri.png", "alt": "Very Bad Split - Structure BD normalisée" },
+        { "src": "/assets/projects/veryBadSplit/gallery/routesTri.png", "alt": "Very Bad Split - Routes" },
+        { "src": "/assets/projects/veryBadSplit/gallery/extrait-audit.png", "alt": "Very Bad Split - Extrait de l'audit de sécurité" },
+        { "src": "/assets/projects/veryBadSplit/gallery/extrait-rapport-de-normalisation.png", "alt": "Very Bad Split - Rapport de normalisation 3NF" }
+      ]
+    },
+    {
+      "titre": "Audit Écoconception — Hébergement de data.gouv.fr",
+      "contexte": "Travail académique de 3e année de BUT Informatique réalisé en binôme. L'objectif était d'auditer le site data.gouv.fr selon le Référentiel Général d'Écoconception des Services Numériques, sur la thématique de l'hébergement (OVH).",
+      "argumentation": "Ce projet valide l'AC2 (Profiler, analyser et justifier le comportement d'un code existant) dans un sens élargi : l'audit consiste à analyser et justifier le comportement environnemental d'un système d'hébergement. J'ai évalué 10 critères (PUE, WUE, CUE, localisation géographique, stratégie de réplication, gestion des équipements...) en m'appuyant sur des sources documentaires officielles (KPIs FY25 OVH, bilan carbone, méthodologie environnementale).",
+      "ac_lies": ["AC2"],
+      "projet_ref": null,
+      "images": [
+        { "src": "/assets/projects/datagouv/gallery/extrait-audit-datagouv.png", "alt": "Audit - Extrait audit data.gouv.fr" },
+        { "src": "/assets/projects/datagouv/gallery/extrait-audit.png", "alt": "Audit - Extrait rapport écoconception" }
+      ]
+    },
+    {
+      "titre": "NDI 2025 — Intégration Three.js dans Vue.js",
+      "contexte": "Nuit de l'Info 2025. En réponse à un défi secondaire lors de la compétition, j'ai intégré des éléments 3D interactifs dans l'application Vue.js en utilisant la librairie Three.js.",
+      "argumentation": "Ce projet contribue à l'AC3 (Choisir et utiliser des bibliothèques dédiées au domaine d'application, avec ici, l'immersion 3D). L'intégration de Three.js dans un environnement Vue.js constituait un défi technique : il a fallu choisir la bonne approche pour coupler le cycle de rendu WebGL de Three.js avec le système de composants réactifs de Vue. Ce choix délibéré d'une bibliothèque de rendu 3D pour enrichir l'expérience utilisateur, dans un contexte de temps limité, illustre la capacité à sélectionner et intégrer rapidement des outils spécialisés et ne pas réinventer la roue.",
+      "ac_lies": ["AC3"],
+      "projet_ref": "ndi2025",
+      "images": [
+        { "src": "/assets/projects/ndi2025/gallery/ndi2025Intro.png", "alt": "NDI 2025 - Site web" },
+        { "src": "/assets/projects/ndi2025/gallery/composant3d.png", "alt": "NDI 2025 - Composant Three.js" },
+        { "src": "/assets/projects/ndi2025/gallery/extrait-integration-composant3d.png", "alt": "NDI 2025 - Intégration du composant 3D dans Vue" },
+        { "src": "/assets/projects/ndi2025/gallery/pilliers-composant3d.png", "alt": "NDI 2025 - Piliers (composants 3D)" }
+      ]
+    },
+    {
+      "titre": "Code Game Jam 2026 — Développement d'un jeu 2D (Godot)",
+      "contexte": "Game jam de 3 jours (10e édition de la Code Game Jam) réalisée en équipe pluridisciplinaire (développeurs, graphistes, musicien). Le jeu 'Very Bad Click' est un jeu 2D développé avec le moteur Godot, sur le thème 'Fête des Clics'.",
+      "argumentation": "Ce projet valide l'AC3 (Choisir et utiliser des bibliothèques et méthodes dédiées au domaine du jeu vidéo). J'ai utilisé le moteur Godot avec C#, un outil open source dédié au développement de jeux, en exploitant ses systèmes spécifiques : tilemaps pour la gestion du niveau, state machine pour la gestion des états du personnage, et système d'événements pour les animations et transitions. L'intégration des assets (graphiques, sons) dans un contexte de développement contraint illustre la capacité à mobiliser des outils spécialisés efficacement. L'utilisation d'une state machine pour les animations reflète un schéma de raisonnement et une application des principes solides dans le domaine du jeu vidéo.",
+      "ac_lies": ["AC3"],
+      "projet_ref": null,
+      "images": [
+        { "src": "/assets/projects/codeGameJam2026/gallery/capture.png", "alt": "Code Game Jam 2026 - Capture du jeu Very Bad Click" },
+        { "src": "/assets/projects/codeGameJam2026/gallery/script-classe pour gérer les transitions.png", "alt": "Code Game Jam 2026 - Script gestion de transitions" },
+        { "src": "/assets/projects/codeGameJam2026/gallery/transitions.png", "alt": "Code Game Jam 2026 - Transitions" }
+      ]
+    },
+    {
+      "titre": "AzureSketch — Konva.js, AzureLink et algorithmes de graphes",
+      "contexte": "SAE de 3e année de BUT Informatique. Application web de dessin sous contraintes géométriques permanentes. Le cœur technique repose sur la librairie Konva.js pour la gestion du canevas interactif et sur l'algorithme AzureLink pour la résolution et propagation des contraintes en temps réel, en s'appuyant sur des algorithmes de graphes (BFS, tri topologique de Kahn sur un DAG).",
+      "argumentation": "Ce projet valide l'AC3 (Choisir et utiliser des bibliothèques et méthodes dédiées au domaine d'application) dans le domaine du rendu graphique interactif et de la modélisation sous contraintes. Le choix de Konva.js a été justifié par sa robustesse et sa documentation : elle étend l'API Canvas HTML5 avec un modèle orienté objet permettant de manipuler chaque forme graphique comme un objet distinct, avec une gestion native de la hiérarchie de scène (Stage → Layer → Shape) et des événements utilisateur (gérées par une classe EventManager). L'intégration de l'algorithme AzureLink constitue l'utilisation d'une méthode formelle dédiée à la résolution de systèmes de contraintes géométriques : chaque modification d'une variable déclenche un BFS (parcours en largeur) sur un graphe bipartite (contraintes-variables) pour identifier les contraintes affectées, puis la construction d'un DAG sur lequel est appliqué le tri topologique de Kahn pour ordonner l'exécution des r-méthodes sans cycle ni conflit. Un mécanisme de debouncing régule la fréquence des sauvegardes automatiques et des appels API dans le but d'optimier les performances.",
+      "ac_lies": ["AC3"],
+      "projet_ref": null,
+      "images": [
+        { "src": "/assets/projects/azureSketch/gallery/debounce.png", "alt": "AzureSketch - Mécanisme de debouncing" },
+        { "src": "/assets/projects/azureSketch/gallery/extrait-EventManager.png", "alt": "AzureSketch - EventManager" },
+        { "src": "/assets/projects/azureSketch/gallery/Kahn algo.png", "alt": "AzureSketch - Algorithme de Kahn (tri topologique)" },
+        { "src": "/assets/projects/azureSketch/gallery/solveur.png", "alt": "AzureSketch - Solveur de contraintes AzureLink" }
+      ]
+    }
+  ]
+}
